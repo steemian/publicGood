@@ -1,3 +1,5 @@
+import random
+
 from Game.Player import Player
 from Game.Bet import Bet
 
@@ -22,7 +24,7 @@ class BotAllIn(Bot):
 
 class BotBomberman(Bot):
 	def think(self, context):
-		return Bet.BOMB
+		return random.choice([Bet.BOMB, Bet.TEN])
 
 class BotHonest(Bot):
 	def think(self, context):

@@ -9,6 +9,8 @@ class Table:
 		self.players = players
 
 	def play(self):
+		self.pot = 0
+		self.bombs = 0
 		for p in self.players:
 
 			p.decide()
@@ -38,7 +40,7 @@ class Table:
 				print ("   UNDECIDED")
 
 
-			print ("{} bets {}-{} -> pot {}{} Left {}{}".format(
+			print ("{:20} bets {:>9}-{:9} -> pot {}{:.2f} Left {}{:.2f}".format(
 					p.name, 
 					p.decision.name,
 					p.action.name, 
@@ -48,12 +50,18 @@ class Table:
 					p.ownings))
 
 	def distribute(self):
-		share = 2*self.pot/len(self.players)
-		for p in self.players:
+		share = 2*self.pot/(len(self.players)+1)
+		print ("Equal share is  {:.2f} ".format(share))
+
+		for p in list(self.players):
 			p.ownings += share
-			print ("{} now owns {} ".format(p.name, p.ownings))
-			if (self.bombs >= 0 and p.decision == Bet.NOTHING):
+			print ("{:20} now owns {:.2f} ".format(p.name, p.ownings))
+			
+			# If you forgot you had no bomb left, you may die. Sad story.
+			if (self.bombs >= 0 and p.action == Bet.NOTHING):
 				self.players.remove(p)
+				print ("{} Explodes".format(p.name))
+
 
 
 	

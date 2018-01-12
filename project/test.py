@@ -17,17 +17,32 @@ def populateTable():
 	#print (repr(Bet.ALLIN))
 	#Bet.ALLIN.desc("DDD")
 
+	i = 0
 
-	for i in range(0, 5):
-		players.append(BotAllIn("P" + str(i)))
-
-	players.append(BotBomberman("P" + str(5)))
-	players.append(BotHonest("P" + str(6)))
-
-	for i in range(7, 10):		
-		players.append(BotUrchin("P" + str(i)))
+	players.append(BotHonest("P" + str(i)))
+	i = i+1
+	players.append(BotUrchin("P" + str(i)))
+	i = i+1
+	players.append(BotHonest("P" + str(i)))
+	i = i+1
+	players.append(BotBomberman("P" + str(i)))
+	i = i+1
+	players.append(BotBomberman("P" + str(i)))
+	i = i+1
+	players.append(BotAllIn("P" + str(i)))
+	i = i+1
+	players.append(BotBomberman("P" + str(i)))
+	i = i+1
+	players.append(BotHonest("P" + str(i)))
+	i = i+1
+	players.append(BotUrchin("P" + str(i)))
+	i = i+1
 
 	t = Table(players)
+
+	t.play()
+	t.distribute()
+	print("")
 	t.play()
 	t.distribute()
 
