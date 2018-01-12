@@ -32,4 +32,9 @@ class BotHonest(Bot):
 
 class BotRandom(Bot):
 	def think(self, context):
-		raise NotImplementedError
+		return random.choice([	Bet.BOMB, 
+								Bet.TEN,
+								Bet.TEN,
+								Bet.TEN,
+								Bet.NOTHING,
+								Bet.ALLIN])

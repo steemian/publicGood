@@ -37,6 +37,10 @@ def populateTable():
 	i = i+1
 	players.append(BotUrchin("P" + str(i)))
 	i = i+1
+	players.append(BotRandom("P" + str(i)))
+	i = i+1
+	players.append(BotRandom("P" + str(i)))
+	i = i+1
 
 	t = Table(players)
 
