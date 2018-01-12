@@ -4,18 +4,19 @@ class Player:
 	
 	ownings = 100
 	bombs = 1
-	play = Bet.UNDECIDED
+	action = Bet.UNDECIDED
 	decision = Bet.UNDECIDED
 
 	def __init__(self, name):
 		self.name = name
 
 
-	def decide(self, context):
+	def think(self, context):
 		raise NotImplementedError("Player is abstract")
 
-	def bet(self, context):
-		self.play = self.decision = self.decide(context)
+	def decide(self):
+		context = 0
+		self.action = self.decision = self.think(context)
 		#print ("{} decided {}".format(self.name, self.decision))
 		return self.decision
 

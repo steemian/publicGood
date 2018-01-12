@@ -29,6 +29,7 @@ def populateTable():
 
 	t = Table(players)
 	t.play()
+	t.distribute()
 
 
 
