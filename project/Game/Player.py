@@ -1,7 +1,12 @@
 class Player:
 	
-	def __init__(self):
-		print ("mk PLAYER")
+	def __init__(self, name):
+		self.name = name
+		print ("mk PLAYER -> {}".format(self))
 
-	def test(self):
-		print("PLAYER")
+
+
+	def bet(self):
+		return "NOTHING"
+
+	

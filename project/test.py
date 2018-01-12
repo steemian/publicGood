@@ -1,7 +1,10 @@
 from Game import Table, Player
 
-t = Table()
-p = Player()
+players = [] 
 
-t.test()
-p.test()
+for i in range(0,3):
+	players.append(Player(i))
+
+t = Table(players)
+
+t.play()

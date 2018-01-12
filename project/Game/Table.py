@@ -1,8 +1,12 @@
 class Table:
 	
 
-	def __init__(self):
-		print ("mk TABLE")
+	def __init__(self, players):
+		self.players = players
 
-	def test(self):
-		print ("TABLE")
+	def play(self):
+		for p in self.players:
+			bet = p.bet()
+			print ("{} bets {}".format(p.name, bet))
+
+	
