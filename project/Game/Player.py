@@ -1,5 +1,10 @@
+from Game.Bet import Bet
+
 class Player:
 	
+	ownings = 100
+	bombs = 1
+
 	def __init__(self, name):
 		self.name = name
 		print ("mk PLAYER -> {}".format(self))
@@ -7,6 +12,6 @@ class Player:
 
 
 	def bet(self):
-		return "NOTHING"
+		raise NotImplementedError("Player is abstract")
 
 	
