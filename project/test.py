@@ -1,7 +1,6 @@
-from Game import Table
-from Game.Player import Player
+from Game import Table, Player
 
-t = Table.Table()
+t = Table()
 p = Player()
 
 t.test()
