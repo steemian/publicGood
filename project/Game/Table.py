@@ -58,9 +58,9 @@ class Table:
 			print ("{:20} now owns {:.2f} ".format(p.name, p.ownings))
 			
 			# If you forgot you had no bomb left, you may die. Sad story.
-			if (self.bombs >= 0 and p.action == Bet.NOTHING):
+			if (self.bombs > 0 and p.action == Bet.NOTHING):
 				self.players.remove(p)
-				print ("{} Explodes".format(p.name))
+				print ("{} Explodes ({})".format(p.name, '*'*self.bombs))
 
 
 
