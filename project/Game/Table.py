@@ -7,6 +7,6 @@ class Table:
 	def play(self):
 		for p in self.players:
 			bet = p.bet()
-			print ("{} bets {}".format(p.name, bet))
+			print ("{} bets {}".format(p.name, repr(bet)))
 
 	

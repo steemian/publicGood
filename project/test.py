@@ -1,6 +1,8 @@
-from Game import Table, Player
-from Game import Bot, BotAllIn, BotUrchin
 import random
+
+from Game import Table, Player, Bet
+from Game import Bot, BotAllIn, BotUrchin
+
 
 
 def smokeTest():
@@ -13,6 +15,10 @@ def smokeTest():
 def populateTable():
 	players = [] 
 	
+	#print (repr(Bet.ALLIN))
+	#Bet.ALLIN.desc("DDD")
+
+
 	for i in range(0, 5):
 		players.append(BotAllIn("P" + str(i)))
 
