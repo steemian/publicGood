@@ -52,18 +52,27 @@ def populateTable():
 
 def fullTablePlay():
 	players = [] 
-	for i in range(0,20):
-		c = random.choice([BotRandom, BotAllIn, BotHonest, BotBomberman, BotUrchin])
+	for i in range(0,10):
+		c = random.choice([
+						BotRandom, 
+						BotAllIn, 
+						BotHonest, 
+						BotBomberman, 
+						BotUrchin])
 		players.append(c("P{}".format(i)))
 
 	t = Table(players)
 
-	for round in range(0,3):
+	for round in range(0,20):
 		if (len(t.players) <= 2):
 			break
 
 		t.play()
+		print("")
 		t.distribute()
+		print("")
+		print("")
+
 
 
 

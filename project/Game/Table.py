@@ -40,27 +40,28 @@ class Table:
 				print ("   UNDECIDED")
 
 
-			print ("{:20} bets {:>9}-{:9} -> pot {}{:.2f} Left {}{:.2f}".format(
+	def distribute(self):
+		payout = 2*self.pot/(len(self.players)+1)
+		print ("PAYOUT  {}{:3.2f} / {:2} = {:3.2f} ".format(
+							'*' * self.bombs, self.pot, len(self.players)+1, payout))
+
+		for p in list(self.players):
+			p.ownings += payout
+			
+			# If you forgot you had no bomb left, you may die from other bombers. Sad story.
+			if (self.bombs > 0 and p.action == Bet.NOTHING):
+				self.players.remove(p)
+				
+
+			print ("{:20} bets {:>9}-{:9} - {}{:3.2f} -> {}{:3.2f}  {}".format(
 					p.name, 
 					p.decision.name,
 					p.action.name, 
-					'*' * self.bombs, 
-					self.pot,
 					'*' * p.bombs, 
-					p.ownings))
-
-	def distribute(self):
-		share = 2*self.pot/(len(self.players)+1)
-		print ("Equal share is  {:.2f} ".format(share))
-
-		for p in list(self.players):
-			p.ownings += share
-			print ("{:20} now owns {:.2f} ".format(p.name, p.ownings))
-			
-			# If you forgot you had no bomb left, you may die. Sad story.
-			if (self.bombs > 0 and p.action == Bet.NOTHING):
-				self.players.remove(p)
-				print ("{} Explodes ({})".format(p.name, '*'*self.bombs))
+					p.ownings-payout,
+					'*' * p.bombs, 
+					p.ownings,
+					"**BOOM**" * (self.bombs > 0 and p.action == Bet.NOTHING) ))		
 
 
 
