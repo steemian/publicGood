@@ -52,7 +52,7 @@ def populateTable():
 
 def fullTablePlay():
 	players = [] 
-	for i in range(0,10):
+	for i in range(0,20):
 		c = random.choice([
 						BotRandom, 
 						BotAllIn, 
@@ -63,8 +63,8 @@ def fullTablePlay():
 
 	t = Table(players)
 
-	for round in range(0,20):
-		if (len(t.players) <= 2):
+	for round in range(0,50):
+		if (len(t.players) < 2):
 			break
 
 		t.play()
@@ -73,7 +73,18 @@ def fullTablePlay():
 		print("")
 		print("")
 
+	print ("end at round {}".format(round))
 
+def tablesDispatch():
+
+	for n in range(1,40):
+		players = [] 
+		for i in range(0,n):
+			c = random.choice([BotRandom])
+			players.append(c("P{}".format(i)))
+
+		l = League(players)
+		l.makeTables()
 
 
 
@@ -84,4 +95,4 @@ def fullTablePlay():
 #smokeTest()
 #populateTable()
 
-fullTablePlay()
+tablesDispatch()
