@@ -22,7 +22,7 @@ class Table:
 				else:
 					print ("Player owns {}. Fallback to AllIn"
 						.format(p.ownings))
-					p.action = bet.ALLIN
+					p.action = Bet.ALLIN
 
 			if (p.action ==Bet.BOMB):
 				if (p.bombs >= 1):
@@ -42,7 +42,7 @@ class Table:
 
 	def distribute(self):
 		payout = 2*self.pot/(len(self.players)+1)
-		print ("PAYOUT  {}{:3.2f} / {:2} = {:3.2f} ".format(
+		print ("PAYOUT  2x {}{:3.2f} / {:2} = {:3.2f} ".format(
 							'*' * self.bombs, self.pot, len(self.players)+1, payout))
 
 		for p in list(self.players):
