@@ -86,6 +86,13 @@ def tablesDispatch():
 		l = League(players)
 		l.makeTables()
 
+		dispatched = l.totalPlayersInTables()
+		if (len(l.humans) != dispatched):
+			print("")
+			print("")
+			print("   ERROR  {} != {}  ".format(len(l.humans), dispatched))
+			print("")
+			print("")
 
 
 
