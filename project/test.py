@@ -1,6 +1,7 @@
 import random
 
 from Game import *
+from Contrib import *
 
 
 
@@ -94,6 +95,25 @@ def tablesDispatch():
 			print("")
 			print("")
 
+def fullGame():
+
+	players = []
+
+	for i in range(0, Const.INSTANCES_PER_PLAYER):
+		players.append(BotRandom("R{}".format(i)))
+		players.append(ExamplePlayer("X{}".format(i)))
+		players.append(BotHonest("H{}".format(i)))
+
+	l = League(players)
+
+
+	for phaseIndex in range(0, Const.PHASES_PER_GAME):
+		print ("\n\n\n--PHASE {}".format(phaseIndex))
+		l.makeTables(phaseIndex)
+
+		for roundIndex in range(0, Const.ROUNDS_PER_PHASE):
+			print ("\n     ROUND {}.{}".format(phaseIndex, roundIndex))
+			l.playRound(roundIndex)
 
 
 
@@ -101,5 +121,6 @@ def tablesDispatch():
 
 #smokeTest()
 #populateTable()
+#tablesDispatch()
 
-tablesDispatch()
+fullGame()

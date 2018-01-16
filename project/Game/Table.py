@@ -1,3 +1,5 @@
+import copy
+
 from Game.Bet import Bet
 
 class Table:
@@ -5,15 +7,20 @@ class Table:
 	pot = 0
 	bombs = 0
 
-	def __init__(self, players):
+	def __init__(self, players, name):
 		self.players = players
+		self.name = name
 
-	def play(self):
+	def play(self, roundIndex):
+		
 		self.pot = 0
 		self.bombs = 0
+		self.context.roundIndex = roundIndex 
+
 		for p in self.players:
 
-			p.decide()
+			contextCopy = copy.deepcopy(self.context)
+			p.decide(contextCopy)
 
 			if (p.action == Bet.TEN):
 				if (p.ownings >= 10):
@@ -53,15 +60,15 @@ class Table:
 				self.players.remove(p)
 				
 
-			print ("{:20} bets {:>9}-{:9} - {}{:3.2f} -> {}{:3.2f}  {}".format(
-					p.name, 
-					p.decision.name,
-					p.action.name, 
-					'*' * p.bombs, 
-					p.ownings-payout,
-					'*' * p.bombs, 
-					p.ownings,
-					"**BOOM**" * (self.bombs > 0 and p.action == Bet.NOTHING) ))		
+#			print ("{:20} bets {:>9}-{:9} - {}{:3.2f} -> {}{:3.2f}  {}".format(
+#					p.name, 
+#					p.decision.name,
+#					p.action.name, 
+#					'*' * p.bombs, 
+#					p.ownings-payout,
+#					'*' * p.bombs, 
+#					p.ownings,
+#					"**BOOM**" * (self.bombs > 0 and p.action == Bet.NOTHING) ))		
 
 
 

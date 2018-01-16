@@ -14,9 +14,11 @@ class Player:
 	def think(self, context):
 		raise NotImplementedError("Player is abstract")
 
-	def decide(self):
-		context = 0
-		self.action = self.decision = self.think(context)
+
+	def decide(self, context):
+		#context = 0
+		self.decision = self.think(context)
+		self.action = self.decision
 		#print ("{} decided {}".format(self.name, self.decision))
 		return self.decision
 
