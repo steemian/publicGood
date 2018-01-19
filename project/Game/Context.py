@@ -6,13 +6,16 @@ from Game.Player import Player
 
 class PlayerContext:
 
-	wealth = 0;
-	previousMoves = []
-	id = ""
+#	wealth = 0;
+#	previousMoves = []
+#	id = ""
+#	player = ""
 
 	def __init__(self, player):
 		self.wealth = player.wealth
 		self.id = player.id
+		self.player = player
+		self.previousMoves = []
 
 
 class Context:
@@ -33,9 +36,21 @@ class Context:
 		print ("     CONTEXT BEFORE\n{}".format(self.describe()))
 
 		for p in players:	
-			print ("           P {} - {}".format(p.id, self.playerContexts[p.id].id))
-			self.playerContexts[p.id].previousMoves.append(p.action)
-			self.playerContexts[p.id].wealth = p.wealth
+			c = self.playerContexts[p.id]
+			print ("           P {} - {}".format(p.id, c.player))
+
+			print ("  MOVES p_id={}   p_action={}  p={}\n   c_id={}  c={}\n   c.prmoves=[{}]".format(
+				p.id,
+				p.action,
+				p, 
+				c.id,
+				c, 
+				" ".join(str(m.name) for m in c.previousMoves)))
+
+			c.previousMoves.append(p.action)
+			c.wealth = p.wealth
+
+
 		print ("     CONTEXT AFTER\n{}".format(self.describe()))
 
 
