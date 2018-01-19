@@ -1,6 +1,7 @@
-import random
+import random, string
 
 from Game.Bet import Bet
+from Game.Const import Const
 
 
 class Player:
@@ -12,8 +13,9 @@ class Player:
 	id = 0
 
 	def __init__(self, name):
-		self.id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=Const.RANDOM_ID_LEN))
-		self.name = "{} [{}]".format(name, self_id)
+		choices = string.ascii_uppercase + string.digits
+		self.id = ''.join(random.choices(choices, k=Const.RANDOM_ID_LEN))
+		self.name = "[{} {} ({})]".format(name, self.id, type(self).__name__)
 
 
 	def think(self, context):
