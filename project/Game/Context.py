@@ -14,7 +14,7 @@ class PlayerContext:
 	def __init__(self, player):
 		self.wealth = player.wealth
 		self.id = player.id
-		self.player = player
+		self.player = player 		#TODO: remove this: code should not know it
 		self.previousMoves = []
 
 
@@ -47,7 +47,7 @@ class Context:
 		for p in self.playerContexts.values():
 			description += "        {:6} ({:15})     ({:<3.2f} $)\t- played [{}];\n".format(
 				p.id,
-				type(p.player).__name__,
+				type(p.player).__name__,		#TODO: remove this: code should not know it
 				p.wealth,
 				" ".join(str(m.name) for m in p.previousMoves))
 
