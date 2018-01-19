@@ -15,11 +15,13 @@ class Table:
 		
 		self.pot = 0
 		self.bombs = 0
-		self.context.roundIndex = roundIndex 
+
+		currentContext = copy.deepcopy(self.context)
+		currentContext.roundIndex = roundIndex 
 
 		for p in self.players:
 
-			contextCopy = copy.deepcopy(self.context)
+			contextCopy = copy.deepcopy(currentContext)
 			p.decide(contextCopy)
 
 			if (p.action == Bet.TEN):

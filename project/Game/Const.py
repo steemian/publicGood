@@ -14,3 +14,6 @@ class Const:
 	PHASES_PER_GAME = 2
 	STARTING_WEALTH = 100
 	STARTING_BOMBS = 0
+
+# Misc constants
+	RANDOM_ID_LEN = 4
