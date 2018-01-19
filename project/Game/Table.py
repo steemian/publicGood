@@ -5,13 +5,15 @@ from Game.Context import Context, PlayerContext
 
 class Table:
 	
-	pot = 0
-	bombs = 0
+#	pot = 0
+#	bombs = 0
 
 	def __init__(self, players, name):
 		self.players = players
 		self.name = name
 		self.context = Context(players)
+		self.pot = 0
+		self.bombs = 0
 
 
 
@@ -28,12 +30,12 @@ class Table:
 			p.decide(contextCopy)
 
 			if (p.action == Bet.TEN):
-				if (p.ownings >= 10):
-					p.ownings -= 10
+				if (p.wealth >= 10):
+					p.wealth -= 10
 					self.pot += 10
 				else:
 					print ("Player owns {}. Fallback to AllIn"
-						.format(p.ownings))
+						.format(p.wealth))
 					p.action = Bet.ALLIN
 
 			if (p.action ==Bet.BOMB):
@@ -44,41 +46,41 @@ class Table:
 					p.action = Bet.NOTHING
 
 			if (p.action == Bet.ALLIN):
-				self.pot += p.ownings
-				p.ownings = 0
+				self.pot += p.wealth
+				p.wealth = 0
+			if (p.action == Bet.UNDECIDED):
+				raise Error("Undecided bet not allowed at playing time")
 			if (p.action == Bet.NOTHING):
 				pass
-			if (p.action == Bet.UNDECIDED):
-				print ("   UNDECIDED")
 
 
 	def distribute(self):
 		payout = 2*self.pot/(len(self.players)+1) #TODO: double check the +1
 
-		print ("PAYOUT  2x {}{:3.2f} / {:2} = {:3.2f} ".format(
-							'*' * self.bombs, self.pot, len(self.players)+1, payout))
+#		print ("PAYOUT  2x {}{:>3.2f} / {:2} = {:3.2f} ".format(
+#							'*' * self.bombs, self.pot, len(self.players)+1, payout))
 
 		for p in list(self.players):
-			p.ownings += payout
+			p.wealth += payout
 			
 			# If you forgot you had no bomb left, you may die from other bombers. Sad story.
 			if (self.bombs > 0 and p.action == Bet.NOTHING):
 				self.players.remove(p)
 
-		self.context.update(self.players)
 
-				
-
-#			print ("{:20} bets {:>9}-{:9} - {}{:3.2f} -> {}{:3.2f}  {}".format(
+#			print ("{:25} bets {:>9}-{:9} - {}{:3.2f} -> {}{:3.2f}  {}".format(
 #					p.name, 
 #					p.decision.name,
 #					p.action.name, 
 #					'*' * p.bombs, 
-#					p.ownings-payout,
+#					p.wealth-payout,
 #					'*' * p.bombs, 
-#					p.ownings,
+#					p.wealth,
 #					"**BOOM**" * (self.bombs > 0 and p.action == Bet.NOTHING) ))		
 
+		self.context.update(self.players, payout)
+
+				
 
 
 	

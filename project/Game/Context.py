@@ -20,52 +20,36 @@ class PlayerContext:
 
 class Context:
 
-	playerContexts = {}
-	roundIndex = 0		# out of Const.ROUNDS_PER_PHASE
-	phaseIndex = 0		# out of PHASES_PER_GAME
+#	playerContexts = {}
+#	roundIndex = 0		# out of Const.ROUNDS_PER_PHASE
+#	phaseIndex = 0		# out of PHASES_PER_GAME
 
 
 	def __init__(self, players):
+		self.payouts = []
+		self.playerContexts = {}
 		for p in players:
 			self.playerContexts[p.id] = PlayerContext(p)
 
 
-	def update(self, players):
-		print ("     CONTEXT UPDATE\n{}".format(players))
-
-		print ("     CONTEXT BEFORE\n{}".format(self.describe()))
-
+	def update(self, players, payout):
+		self.payouts.append(payout)
 		for p in players:	
 			c = self.playerContexts[p.id]
-			print ("           P {} - {}".format(p.id, c.player))
-
-			print ("  MOVES p_id={}   p_action={}  p={}\n   c_id={}  c={}\n   c.prmoves=[{}]".format(
-				p.id,
-				p.action,
-				p, 
-				c.id,
-				c, 
-				" ".join(str(m.name) for m in c.previousMoves)))
-
 			c.previousMoves.append(p.action)
 			c.wealth = p.wealth
-
-
-		print ("     CONTEXT AFTER\n{}".format(self.describe()))
+		print (self.describe())
 
 
 	def describe(self):
-		description =  "           || CONTEXT -----------------||\n"  
-		description += "              ROUND {}.{}\n".format(self.phaseIndex, self.roundIndex)
 
-
+		description = "      ROUND {}.{}  - pays {:3.2f} each\n".format(self.phaseIndex, self.roundIndex, self.payouts[-1])
 		for p in self.playerContexts.values():
-			description += "           {:15} ({}$) - played [{}];\n".format(
+			description += "        {:6} ({:15})     ({:<3.2f} $)\t- played [{}];\n".format(
 				p.id,
+				type(p.player).__name__,
 				p.wealth,
 				" ".join(str(m.name) for m in p.previousMoves))
-
-		description += "\n           ||-----------------------------"
 
 		return description
 				
