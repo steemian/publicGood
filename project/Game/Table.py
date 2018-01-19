@@ -1,6 +1,7 @@
 import copy
 
 from Game.Bet import Bet
+from Game.Context import Context, PlayerContext
 
 class Table:
 	
@@ -10,18 +11,20 @@ class Table:
 	def __init__(self, players, name):
 		self.players = players
 		self.name = name
+		self.context = Context(players)
+
+
 
 	def play(self, roundIndex):
 		
 		self.pot = 0
 		self.bombs = 0
 
-		currentContext = copy.deepcopy(self.context)
-		currentContext.roundIndex = roundIndex 
+		self.context.roundIndex = roundIndex 
 
 		for p in self.players:
 
-			contextCopy = copy.deepcopy(currentContext)
+			contextCopy = copy.deepcopy(self.context)
 			p.decide(contextCopy)
 
 			if (p.action == Bet.TEN):
@@ -50,7 +53,8 @@ class Table:
 
 
 	def distribute(self):
-		payout = 2*self.pot/(len(self.players)+1)
+		payout = 2*self.pot/(len(self.players)+1) #TODO: double check the +1
+
 		print ("PAYOUT  2x {}{:3.2f} / {:2} = {:3.2f} ".format(
 							'*' * self.bombs, self.pot, len(self.players)+1, payout))
 
@@ -60,6 +64,9 @@ class Table:
 			# If you forgot you had no bomb left, you may die from other bombers. Sad story.
 			if (self.bombs > 0 and p.action == Bet.NOTHING):
 				self.players.remove(p)
+
+		self.context.update(self.players)
+
 				
 
 #			print ("{:20} bets {:>9}-{:9} - {}{:3.2f} -> {}{:3.2f}  {}".format(
