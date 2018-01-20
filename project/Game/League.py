@@ -37,7 +37,7 @@ class League:
 		nbHumans = len(self.humans)
 		nbTables = ceil(nbHumans / Const.MAX_HUMANS_PER_TABLE)
 		nbHumansPerTable = nbHumans / nbTables
-		print ("Dispatch {} humans into {} tables: {} each".format(nbHumans, nbTables, nbHumansPerTable))
+		#print ("Dispatch {} humans into {} tables: {} each".format(nbHumans, nbTables, nbHumansPerTable))
 
 		shuffle(self.humans)
 		self.tables = []
@@ -60,5 +60,7 @@ class League:
 			#print("cur={} min={} max={}\n\n".format(len(table.players),popMin, popMax))
 
 
-		print ("{:3} humans in {:2} tables (avg={:2.2f}). Min={} Max={}  Delta={}"
-			.format(nbHumans, len(self.tables), nbHumansPerTable, popMin, popMax, popMax-popMin))
+
+		if (popMax-popMin > 1)	:
+			print ("{:3} humans in {:2} tables (avg={:2.2f}). Min={} Max={}  Delta={}"
+				.format(nbHumans, len(self.tables), nbHumansPerTable, popMin, popMax, popMax-popMin))

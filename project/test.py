@@ -78,14 +78,14 @@ def fullTablePlay():
 
 def tablesDispatch():
 
-	for n in range(1,40):
+	for n in range(1,400):
 		players = [] 
 		for i in range(0,n):
 			c = random.choice([BotRandom])
 			players.append(c("P{}".format(i)))
 
 		l = League(players)
-		l.makeTables()
+		l.makeTables(0)
 
 		dispatched = l.totalPlayersInTables()
 		if (len(l.humans) != dispatched):
@@ -137,6 +137,6 @@ def instantiateGame():
 
 #smokeTest()
 #populateTable()
-#tablesDispatch()
+tablesDispatch()
 #fullGame()
-instantiateGame()
+#instantiateGame()
