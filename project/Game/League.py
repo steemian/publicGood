@@ -100,16 +100,6 @@ class League:
 			else:
 				ais[name] = p
 
-		print (ais)
-
-		for k,v in ais.items():
-			print (k)
-			print (v)
-
-
-		print ("")
-		print ("")
-
 		sorted(ais, key=lambda key:ais[key].wealth)
 		for k,v in ais.items():
 			print ("{:3} - {:4.2f}   {}".format(index, v.wealth, v.name))

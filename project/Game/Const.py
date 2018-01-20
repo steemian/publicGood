@@ -15,4 +15,4 @@ class Const:
 	STARTING_BOMBS = 0
 
 # Misc constants
-	RANDOM_ID_LEN = 4
+	RANDOM_ID_LEN = 6
