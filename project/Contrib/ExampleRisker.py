@@ -31,7 +31,6 @@ class ExampleRisker(Player):
 		nbTens = sum(c.previousMoves[context.roundIndex-1] == Bet.TEN for c in context.playerContexts.values())
 		nbAllIn = sum(c.previousMoves[context.roundIndex-1] == Bet.ALLIN for c in context.playerContexts.values())
 
-		# substract my own last move
 		if (self.lastMove == Bet.NOTHING):
 			nbUrchins -= 1
 		if (self.lastMove == Bet.TEN):
@@ -39,6 +38,8 @@ class ExampleRisker(Player):
 		if (self.lastMove == Bet.ALLIN):
 			nbAllIn -= 1
 
+
+		# Actual decision
 		if (nbUrchins > 4):
 			return Bet.NOTHING
 

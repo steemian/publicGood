@@ -2,7 +2,7 @@
 
 
 :INFINITE
-    cls
+	cls
     python test.py > test.log
-    pause
-    goto INFINITE
+	pause
+	goto INFINITE
