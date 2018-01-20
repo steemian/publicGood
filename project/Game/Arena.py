@@ -11,11 +11,13 @@ import Game.Context
 class Arena:
 	
 	availablePlayers = 	[
-		ExamplePlayer,
+		ExampleFair,
+		ExampleRisker,
 	]
 
 	availableBots = [
-		BotUrchin
+		BotUrchin,
+		BotHonest,
 	]
 
 
