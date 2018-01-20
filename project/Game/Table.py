@@ -8,21 +8,22 @@ class Table:
 #	pot = 0
 #	bombs = 0
 
-	def __init__(self, players, name):
+	def __init__(self, players, name, tableIndex, totalBots, totalHumans):
 		self.players = players
 		self.name = name
-		self.context = Context(players)
+		self.context = Context(players, tableIndex, totalBots, totalHumans)
 		self.pot = 0
 		self.bombs = 0
 
 
 
-	def play(self, roundIndex):
+	def play(self, phaseIndex, roundIndex):
 		
 		self.pot = 0
 		self.bombs = 0
 
 		self.context.roundIndex = roundIndex 
+		self.context.phaseIndex = phaseIndex 
 
 		for p in self.players:
 

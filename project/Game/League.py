@@ -23,10 +23,11 @@ class League:
 		return toreturn
 
 
-	def playRound (self, roundIndex):
+	def playRound (self, phaseIndex, roundIndex):
+		print (" -ROUND {}/{} -------".format(roundIndex, Const.ROUNDS_PER_PHASE))
 		for t in self.tables:
-			print ("\n      TABLE {}/{}".format(t.name, "X"))
-			t.play(roundIndex)
+			#print ("\n -TABLE {}/{}".format(t.name, "X"))
+			t.play(phaseIndex, roundIndex)
 			t.distribute()
 
 
@@ -43,9 +44,7 @@ class League:
 
 		for tabIndex in range(0,nbTables):
 			end = start + nbHumansPerTable
-			table = Table(self.humans[round(start):ceil(end)], "Tab {}".format(tabIndex))
-			table.context = Context(table.players)
-			table.context.phaseIndex = phaseIndex
+			table = Table(self.humans[round(start):ceil(end)], "Tab {}".format(tabIndex), tabIndex, -1, nbHumans)
 			self.tables.append(table)
 
 			start += len(table.players)
