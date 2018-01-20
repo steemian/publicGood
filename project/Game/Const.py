@@ -11,7 +11,7 @@ class Const:
 
 # Game constants
 	ROUNDS_PER_PHASE = 3
-	PHASES_PER_GAME = 2
+	PHASES_PER_GAME = 3
 	STARTING_WEALTH = 100
 	STARTING_BOMBS = 0
 

@@ -37,8 +37,7 @@ class League:
 		nbHumans = len(self.humans)
 		nbTables = ceil(nbHumans / Const.MAX_HUMANS_PER_TABLE)
 		nbHumansPerTable = nbHumans / nbTables
-#		print ("Dispatch {} humans into {} tables: {} each"
-#			.format(nbHumans, nbTables, nbHumansPerTable))
+		print ("Dispatch {} humans into {} tables: {} each".format(nbHumans, nbTables, nbHumansPerTable))
 
 		shuffle(self.humans)
 		self.tables = []

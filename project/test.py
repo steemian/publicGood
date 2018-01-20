@@ -123,12 +123,10 @@ def instantiateGame():
 
 	g = Game()
 
-	print (g.__dict__)
-
-	g.players.append(BotRandom("R0"))
-	g.players.append(BotRandom("R1"))
-	g.players.append(BotRandom("R2"))
-	g.players.append(BotUrchin("U3"))
+	#g.players.append(BotRandom("R0"))
+	#g.players.append(BotRandom("R1"))
+	#g.players.append(BotRandom("R2"))
+	#g.players.append(BotUrchin("U3"))
 	
 	g.runGame()
 
