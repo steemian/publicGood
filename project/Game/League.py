@@ -5,7 +5,7 @@ from Game.Player import Player
 from Game.Table import Table
 from Game.Const import Const 	
 from Game.Context import Context, PlayerContext
-import Game.Game
+from Game.Arena import Arena
 
 
 
@@ -56,7 +56,7 @@ class League:
 
 			humansToAdd = self.humans[humansIndex:humansIndex+curHumans]
 			nbBotsToAdd = Const.PLAYERS_PER_TABLE - curHumans
-			botsToAdd = [Game.mkBot() for i in range(0, nbBotsToAdd)]
+			botsToAdd = [Arena.mkBot() for i in range(0, nbBotsToAdd)]
 			table = Table(humansToAdd, "Tab {}".format(tabIndex), tabIndex, totalBots, totalHumans)
 			self.tables.append(table)
 			humansIndex += curHumans

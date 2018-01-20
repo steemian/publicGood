@@ -123,14 +123,14 @@ def fullGame():
 
 def instantiateGame():
 
-	g = Game()
+	a = Arena()
 
 	#g.players.append(BotRandom("R0"))
 	#g.players.append(BotRandom("R1"))
 	#g.players.append(BotRandom("R2"))
 	#g.players.append(BotUrchin("U3"))
 	
-	g.runGame()
+	a.runArena()
 
 
 
