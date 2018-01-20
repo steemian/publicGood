@@ -1,1 +1,2 @@
-from Contrib.ExamplePlayer import ExamplePlayer
+from Contrib.ExampleFair import ExampleFair
+from Contrib.ExampleRisker import ExampleRisker
