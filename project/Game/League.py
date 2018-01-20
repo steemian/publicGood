@@ -14,53 +14,53 @@ class League:
     # tables = []
     # humans = []
 
-    def __init__(self, humans):
-        self.humans = humans
-        for h in humans:
-            h.wealth = Const.STARTING_WEALTH
+	def __init__(self, humans):
+		self.humans = humans
+		for h in humans:
+			h.wealth = Const.STARTING_WEALTH
 
-    def totalPlayersInTables(self):
-        toreturn = 0
-        for t in self.tables:
-            toreturn += len(t.players)
-        return toreturn
+	def totalPlayersInTables(self):
+		toreturn = 0
+		for t in self.tables:
+			toreturn += len(t.players)
+		return toreturn
 
-        
-    def playRound (self, phaseIndex, roundIndex):
-        print (" -ROUND {}/{} -------".format(roundIndex, Const.ROUNDS_PER_PHASE))
-        for t in self.tables:
-            #print ("\n -TABLE {}/{}".format(t.name, "X"))
-            t.play(phaseIndex, roundIndex)
-            t.distribute()
-
-
+		
+	def playRound (self, phaseIndex, roundIndex):
+		print (" -ROUND {}/{} -------".format(roundIndex, Const.ROUNDS_PER_PHASE))
+		for t in self.tables:
+			#print ("\n -TABLE {}/{}".format(t.name, "X"))
+			t.play(phaseIndex, roundIndex)
+			t.distribute()
 
 
-    def makeTables(self, phaseIndex):
-        
-        totalHumans = len(self.humans)
-        nbTables = ceil(totalHumans / Const.MAX_HUMANS_PER_TABLE)
-        totalBots = (nbTables*Const.PLAYERS_PER_TABLE) - totalHumans
 
-        shuffle(self.humans)
-        self.tables = []
 
-        humansIndex = 0
-        minHumansPerTable = floor(totalHumans / nbTables)
+	def makeTables(self, phaseIndex):
+		
+		totalHumans = len(self.humans)
+		nbTables = ceil(totalHumans / Const.MAX_HUMANS_PER_TABLE)
+		totalBots = (nbTables*Const.PLAYERS_PER_TABLE) - totalHumans
 
-        for tabIndex in range(0,nbTables):
+		shuffle(self.humans)
+		self.tables = []
 
-            if ((totalHumans-humansIndex)/(nbTables-tabIndex) > minHumansPerTable):
-                curHumans = minHumansPerTable+1
-            else:
-                curHumans = minHumansPerTable
+		humansIndex = 0
+		minHumansPerTable = floor(totalHumans / nbTables)
 
-            humansToAdd = self.humans[humansIndex:humansIndex+curHumans]
-            nbBotsToAdd = Const.PLAYERS_PER_TABLE - curHumans
-            botsToAdd = [Arena.mkBot() for i in range(0, nbBotsToAdd)]
-            table = Table(humansToAdd+botsToAdd, "Tab {}".format(tabIndex), tabIndex, totalBots, totalHumans)
-            self.tables.append(table)
-            humansIndex += curHumans
+		for tabIndex in range(0,nbTables):
+
+			if ((totalHumans-humansIndex)/(nbTables-tabIndex) > minHumansPerTable):
+				curHumans = minHumansPerTable+1
+			else:
+				curHumans = minHumansPerTable
+
+			humansToAdd = self.humans[humansIndex:humansIndex+curHumans]
+			nbBotsToAdd = Const.PLAYERS_PER_TABLE - curHumans
+			botsToAdd = [Arena.mkBot() for i in range(0, nbBotsToAdd)]
+			table = Table(humansToAdd+botsToAdd, "Tab {}".format(tabIndex), tabIndex, totalBots, totalHumans)
+			self.tables.append(table)
+			humansIndex += curHumans
 
 
     def displayResults(self):
