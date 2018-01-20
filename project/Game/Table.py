@@ -56,7 +56,7 @@ class Table:
 
 
 	def distribute(self):
-		payout = 2*self.pot/(len(self.players)+1) #TODO: double check the +1
+		payout = 2*self.pot/(len(self.players))
 
 #		print ("PAYOUT  2x {}{:>3.2f} / {:2} = {:3.2f} ".format(
 #							'*' * self.bombs, self.pot, len(self.players)+1, payout))
