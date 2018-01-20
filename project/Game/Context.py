@@ -1,5 +1,7 @@
+from enum import Enum
+
 from Game.Player import Player
-#from Game.Table import Table
+from Game.Bet import Bet
 
 
 
@@ -43,9 +45,25 @@ class Context:
 	def update(self, players, payout):
 		self.payouts.append(payout)
 		for p in players:	
+
+
+			if (type(p.action) == type(None)):
+				print("")
+				print("*********************************")
+				print("")
+				print (p)
+				print (p.action)
+				print (type(p.action))
+				print (self.describe())
+				print("")
+				raise Exception("Incompatible type")
+
+
 			c = self.playerContexts[p.id]
 			c.previousMoves.append(p.action)
 			c.wealth = p.wealth
+		
+
 		print (self.describe())
 
 
@@ -53,7 +71,7 @@ class Context:
 
 		lastPayout = "{:3.2f}".format(self.payouts[-1]) if (len(self.payouts) > 0) else "N/A"
 
-		description = "    TABLE {:2}  ROUND {}.{}  - pays {} each - Hum/Bots = {:2}/{:2}\n".format(
+		description = "  TABLE {:2}  ROUND {}.{}  - pays {} each - Hum/Bots = {:2}/{:2}\n".format(
 				self.tableIndex, 
 				self.phaseIndex, 
 				self.roundIndex, 
@@ -62,12 +80,27 @@ class Context:
 				self.totalBots)
 
 		for p in self.playerContexts.values():
-			description += "        {:6} ({:15})     ({:<4.2f} $) \t- played [{}];\n".format(
+			description += "     {:6} ({:15})   {:<4.2f} \t-  [{}];\n".format(
 				p.id,
 				type(p.player).__name__,		#TODO: remove this: code should not know it
 				p.wealth,
-				" ".join(str(m.name) for m in p.previousMoves)
+				" ".join(self.shortEnum(m) for m in p.previousMoves)
 				)
 
 		return description
+
+	def shortEnum(self, bet):
+		if (bet == Bet.NOTHING):
+			return "0"
+		if (bet == Bet.TEN):
+			return "1"
+		if (bet == Bet.ALLIN):
+			return "A"
+		if (bet == Bet.BOMB):
+			return "#"
+		if (bet == None):
+			return "."
+		if (bet == UNDECIDED):
+			return "?"
+
 				

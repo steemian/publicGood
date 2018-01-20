@@ -12,6 +12,7 @@ from Game.Arena import Arena
 class League:
 
 	# tables = []
+	# humans = []
 
 	def __init__(self, humans):
 		self.humans = humans
@@ -32,6 +33,7 @@ class League:
 			#print ("\n -TABLE {}/{}".format(t.name, "X"))
 			t.play(phaseIndex, roundIndex)
 			t.distribute()
+
 
 
 
@@ -60,4 +62,49 @@ class League:
 			table = Table(humansToAdd+botsToAdd, "Tab {}".format(tabIndex), tabIndex, totalBots, totalHumans)
 			self.tables.append(table)
 			humansIndex += curHumans
+
+
+	def displayResults(self):
+		print ("\n\n")
+		print ("-----------------------")
+		print ("-- LEAGUE RESULTS")
+		print ("-----------------------")
+		print ("")
+		print ("{} registered AI with {} instances each".format(len(Arena.availablePlayers), Const.INSTANCES_PER_PLAYER))
+		print ("{} humans and {} short-lived bots dispatched into {} tables (average of {:2.2f} humans per table)".format(
+				len(self.humans), (len(self.tables)*Const.PLAYERS_PER_TABLE) - len(self.humans) ,len(self.tables),  
+				len(self.humans)/len(self.tables)))
+		print ("Distributed {:.2f} $ to players in {} phases of {} rounds".format(
+			sum(p.wealth for p in self.humans), Const.PHASES_PER_GAME, Const.ROUNDS_PER_PHASE))
+		print ("")
+		print ("-----------------------")
+		print ("-- ALL INSTANCES")
+		print ("-----------------------")
+
+		self.humans.sort(reverse=True, key=lambda p:p.wealth )
+		index = 1
+		for p in self.humans:
+			print ("{:3} - {:4.2f}   {}".format(index, p.wealth, p.name))
+			index += 1
+
+		print ("")
+		print ("-----------------------")
+		print ("-- WINNING PLAYERS")
+		print ("-----------------------")
+
+		ais = {}
+		for p in self.humans:
+			name = type(p).__name__
+			if (name in  ais):
+				if (p.wealth > ais[name].wealth):
+					ais[name] = p
+			else:
+				ais[name] = p
+
+		sorted(ais, key=lambda key:ais[key].wealth)
+		index = 1
+		for k,v in ais.items():
+			print ("{:3} - {:6.2f}   {}".format(index, v.wealth, v.name))
+			index += 1
+
 

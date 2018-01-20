@@ -3,6 +3,6 @@
 
 :INFINITE
 	cls
-	python test.py
+	python test.py > test.log
 	pause
 	goto INFINITE
