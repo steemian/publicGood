@@ -5,6 +5,9 @@ from Game.Player import Player
 from Game.Table import Table
 from Game.Const import Const 	
 from Game.Context import Context, PlayerContext
+import Game.Game
+
+
 
 class League:
 
@@ -36,6 +39,7 @@ class League:
 		
 		totalHumans = len(self.humans)
 		nbTables = ceil(totalHumans / Const.MAX_HUMANS_PER_TABLE)
+		totalBots = (nbTables*Const.PLAYERS_PER_TABLE) - totalHumans
 
 		shuffle(self.humans)
 		self.tables = []
@@ -51,8 +55,9 @@ class League:
 				curHumans = minHumansPerTable
 
 			humansToAdd = self.humans[humansIndex:humansIndex+curHumans]
-			#TODO: add bots, count them and remove the -1 below
-			table = Table(humansToAdd, "Tab {}".format(tabIndex), tabIndex, -1, totalHumans)
+			nbBotsToAdd = Const.PLAYERS_PER_TABLE - curHumans
+			botsToAdd = [Game.mkBot() for i in range(0, nbBotsToAdd)]
+			table = Table(humansToAdd, "Tab {}".format(tabIndex), tabIndex, totalBots, totalHumans)
 			self.tables.append(table)
 			humansIndex += curHumans
 

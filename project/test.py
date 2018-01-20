@@ -95,6 +95,8 @@ def tablesDispatch():
 			print("")
 			print("")
 
+
+
 def fullGame():
 
 	players = []
@@ -137,6 +139,6 @@ def instantiateGame():
 
 #smokeTest()
 #populateTable()
-tablesDispatch()
+#tablesDispatch()
 #fullGame()
-#instantiateGame()
+instantiateGame()

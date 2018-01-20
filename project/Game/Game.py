@@ -1,5 +1,11 @@
-from Game import *
 from Contrib import *
+
+from Game.Bot import *
+from Game.Const import *
+
+import Game.League
+import Game.Bet
+import Game.Context 
 
 
 class Game:
@@ -11,6 +17,8 @@ class Game:
 	availableBots = [
 		BotUrchin
 	]
+
+
 
 
 
@@ -36,5 +44,9 @@ class Game:
 
 	def runRound(self, phaseIndex, roundIndex):
 		self.league.playRound(phaseIndex, roundIndex)			
+
+
+	def mkBot():
+		return random.choice(Game.availableBots)("")
 
 
