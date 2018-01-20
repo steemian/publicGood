@@ -5,3 +5,4 @@ from Game.Const import Const
 from Game.Bot import Bot, BotAllIn, BotUrchin, BotBomberman, BotHonest, BotRandom
 from Game.Bet import Bet
 from Game.Context import Context
+from Game.Game import Game

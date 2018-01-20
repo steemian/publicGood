@@ -14,11 +14,12 @@ class Player:
 
 	def __init__(self, name):
 		self.id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=Const.RANDOM_ID_LEN))
-		self.name = "[{} {} ({})]".format(name, self.id, type(self).__name__)
 		self.wealth = Const.STARTING_WEALTH
 		self.bombs = Const.STARTING_BOMBS
 		self.action = Bet.UNDECIDED
 		self.decision = Bet.UNDECIDED
+		# TODO: name is probably useless
+		self.name = "[{} {} ({})]".format(name, self.id, type(self).__name__)
 
 
 	def think(self, context):

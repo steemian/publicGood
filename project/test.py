@@ -119,10 +119,18 @@ def fullGame():
 
 
 
+def instantiateGame():
+
+	g = Game()
+	g.runGame()
+
+
+
+
 # Run tests
 
 #smokeTest()
 #populateTable()
 #tablesDispatch()
-
-fullGame()
+#fullGame()
+instantiateGame()
