@@ -6,6 +6,7 @@ from Game.Bet import Bet
 class Bot(Player):
 	
 
+
 	def __init__(self):
 		raise Error("Please provide a name")
 

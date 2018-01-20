@@ -1,4 +1,5 @@
 import copy
+from random import shuffle
 
 from Game.Bet import Bet
 from Game.Context import Context, PlayerContext
@@ -9,6 +10,7 @@ class Table:
 #	bombs = 0
 
 	def __init__(self, players, name, tableIndex, totalBots, totalHumans):
+		shuffle(players)
 		self.players = players
 		self.name = name
 		self.context = Context(players, tableIndex, totalBots, totalHumans)

@@ -78,14 +78,14 @@ def fullTablePlay():
 
 def tablesDispatch():
 
-	for n in range(1,40):
+	for n in range(1,400):
 		players = [] 
 		for i in range(0,n):
 			c = random.choice([BotRandom])
 			players.append(c("P{}".format(i)))
 
 		l = League(players)
-		l.makeTables()
+		l.makeTables(0)
 
 		dispatched = l.totalPlayersInTables()
 		if (len(l.humans) != dispatched):
@@ -94,6 +94,8 @@ def tablesDispatch():
 			print("   ERROR  {} != {}  ".format(len(l.humans), dispatched))
 			print("")
 			print("")
+
+
 
 def fullGame():
 
@@ -121,16 +123,14 @@ def fullGame():
 
 def instantiateGame():
 
-	g = Game()
+	a = Arena()
 
-	print (g.__dict__)
-
-	g.players.append(BotRandom("R0"))
-	g.players.append(BotRandom("R1"))
-	g.players.append(BotRandom("R2"))
-	g.players.append(BotUrchin("U3"))
+	#g.players.append(BotRandom("R0"))
+	#g.players.append(BotRandom("R1"))
+	#g.players.append(BotRandom("R2"))
+	#g.players.append(BotUrchin("U3"))
 	
-	g.runGame()
+	a.runArena()
 
 
 
