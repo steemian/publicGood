@@ -32,6 +32,10 @@ class Table:
 			contextCopy = copy.deepcopy(self.context)
 			p.decide(contextCopy)
 
+			if (p.action == None or p.action == Bet.UNDECIDED):
+				p.action = Bet.TEN
+				#raise Exception("Undecided bet not allowed at playing time")
+
 			if (p.action == Bet.TEN):
 				if (p.wealth >= 10):
 					p.wealth -= 10
@@ -51,8 +55,6 @@ class Table:
 			if (p.action == Bet.ALLIN):
 				self.pot += p.wealth
 				p.wealth = 0
-			if (p.action == Bet.UNDECIDED):
-				raise Error("Undecided bet not allowed at playing time")
 			if (p.action == Bet.NOTHING):
 				pass
 
