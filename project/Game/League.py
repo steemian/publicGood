@@ -34,10 +34,12 @@ class League:
 
 	def makeTables(self, phaseIndex):
 		
-		nbHumans = len(self.humans)
-		nbTables = ceil(nbHumans / Const.MAX_HUMANS_PER_TABLE)
-		nbHumansPerTable = nbHumans / nbTables
-		#print ("Dispatch {} humans into {} tables: {} each".format(nbHumans, nbTables, nbHumansPerTable))
+		totalHumans = len(self.humans)
+		nbTables = ceil(totalHumans / Const.MAX_HUMANS_PER_TABLE)
+
+
+		#nbHumansPerTable = totalHumans / nbTables
+		print ("\nDispatch {} humans into {} tables: {:2.1f} each".format(totalHumans, nbTables, totalHumans / nbTables))
 
 		shuffle(self.humans)
 		self.tables = []
@@ -45,14 +47,33 @@ class League:
 		popMin = 9999
 		popMax = 0
 
+		humansIndex = 0
+
+
+		minHumansPerTable = floor(totalHumans / nbTables)
+
+
 		for tabIndex in range(0,nbTables):
-			end = start + nbHumansPerTable
-			table = Table(self.humans[round(start):ceil(end)], "Tab {}".format(tabIndex), tabIndex, -1, nbHumans)
+
+			if ((totalHumans-humansIndex)/(nbTables-tabIndex) > minHumansPerTable):
+				curHumans = minHumansPerTable+1
+			else:
+				curHumans = minHumansPerTable
+
+#			print ("{} humans for {} tables left (avg {:2.1f}) - choose {}".format(
+#					(totalHumans-humansIndex),
+#					(nbTables-tabIndex),
+#					(totalHumans-humansIndex)/(nbTables-tabIndex),
+#					curHumans
+#				))	
+
+			humansToAdd = self.humans[humansIndex:humansIndex+curHumans]
+			table = Table(humansToAdd, "Tab {}".format(tabIndex), tabIndex, -1, totalHumans)
 			self.tables.append(table)
+			humansIndex += curHumans
 
 #			print ("Table {:2} has {:2} players from {:2.1f} to {:2.1f}"
 #				.format(tabIndex, len(table.players), start, end))
-			start += len(table.players)
 
 			#print("cur={} min={} max={}".format(len(table.players),popMin, popMax))
 			popMin = min(popMin, len(table.players))
@@ -63,4 +84,4 @@ class League:
 
 		if (popMax-popMin > 1)	:
 			print ("{:3} humans in {:2} tables (avg={:2.2f}). Min={} Max={}  Delta={}"
-				.format(nbHumans, len(self.tables), nbHumansPerTable, popMin, popMax, popMax-popMin))
+				.format(totalHumans, len(self.tables), (totalHumans-humansIndex)/(nbTables-tabIndex), popMin, popMax, popMax-popMin))
