@@ -21,13 +21,21 @@ class PlayerContext:
 class Context:
 
 #	playerContexts = {}
+#   payouts = []
 #	roundIndex = 0		# out of Const.ROUNDS_PER_PHASE
 #	phaseIndex = 0		# out of PHASES_PER_GAME
+#	totalHumans = 0
+# 	totalBots = 0
+#	tableIndex = 0
 
-
-	def __init__(self, players):
+	def __init__(self, players, tableIndex, totalBots, totalHumans):
 		self.payouts = []
 		self.playerContexts = {}
+		self.roundIndex = 0
+		self.phaseIndex = 0
+		self.tableIndex = tableIndex
+		self.totalBots = totalBots
+		self.totalHumans = totalHumans
 		for p in players:
 			self.playerContexts[p.id] = PlayerContext(p)
 
@@ -43,13 +51,23 @@ class Context:
 
 	def describe(self):
 
-		description = "      ROUND {}.{}  - pays {:3.2f} each\n".format(self.phaseIndex, self.roundIndex, self.payouts[-1])
+		lastPayout = "{:3.2f}".format(self.payouts[-1]) if (len(self.payouts) > 0) else "N/A"
+
+		description = "    TABLE {:2}  ROUND {}.{}  - pays {} each - Hum/Bots = {:2}/{:2}\n".format(
+				self.tableIndex, 
+				self.phaseIndex, 
+				self.roundIndex, 
+				lastPayout, 
+				self.totalHumans, 
+				self.totalBots)
+
 		for p in self.playerContexts.values():
-			description += "        {:6} ({:15})     ({:<3.2f} $)\t- played [{}];\n".format(
+			description += "        {:6} ({:15})     ({:<4.2f} $) \t- played [{}];\n".format(
 				p.id,
 				type(p.player).__name__,		#TODO: remove this: code should not know it
 				p.wealth,
-				" ".join(str(m.name) for m in p.previousMoves))
+				" ".join(str(m.name) for m in p.previousMoves)
+				)
 
 		return description
 				
