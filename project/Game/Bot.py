@@ -10,7 +10,8 @@ class Bot(Player):
 		raise Error("Please provide a name")
 
 	def __init__(self, name):
-		self.name = "[{} ({})]".format(name, type(self).__name__)
+		super(Bot, self).__init__(name)
+
 
 	def think(self, context):
 		raise NotImplementedError("Bot is abstract")

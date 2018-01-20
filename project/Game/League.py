@@ -44,7 +44,7 @@ class League:
 		for tabIndex in range(0,nbTables):
 			end = start + nbHumansPerTable
 			table = Table(self.humans[round(start):ceil(end)], "Tab {}".format(tabIndex))
-			table.context = Context()
+			table.context = Context(table.players)
 			table.context.phaseIndex = phaseIndex
 			self.tables.append(table)
 

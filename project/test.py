@@ -103,6 +103,8 @@ def fullGame():
 		players.append(BotRandom("R{}".format(i)))
 		players.append(ExamplePlayer("X{}".format(i)))
 		players.append(BotHonest("H{}".format(i)))
+		players.append(BotUrchin("H{}".format(i)))
+		players.append(BotUrchin("H{}".format(i)))
 
 	l = League(players)
 

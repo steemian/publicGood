@@ -5,6 +5,6 @@ from Game.Bet import Bet
 class ExamplePlayer(Player):
 	def think(self, context):
 
-		print (context.describe())
+		#print (context.describe())
 
 		return Bet.ALLIN
