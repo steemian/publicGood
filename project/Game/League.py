@@ -37,21 +37,11 @@ class League:
 		totalHumans = len(self.humans)
 		nbTables = ceil(totalHumans / Const.MAX_HUMANS_PER_TABLE)
 
-
-		#nbHumansPerTable = totalHumans / nbTables
-		print ("\nDispatch {} humans into {} tables: {:2.1f} each".format(totalHumans, nbTables, totalHumans / nbTables))
-
 		shuffle(self.humans)
 		self.tables = []
-		start = 0.
-		popMin = 9999
-		popMax = 0
 
 		humansIndex = 0
-
-
 		minHumansPerTable = floor(totalHumans / nbTables)
-
 
 		for tabIndex in range(0,nbTables):
 
@@ -60,28 +50,9 @@ class League:
 			else:
 				curHumans = minHumansPerTable
 
-#			print ("{} humans for {} tables left (avg {:2.1f}) - choose {}".format(
-#					(totalHumans-humansIndex),
-#					(nbTables-tabIndex),
-#					(totalHumans-humansIndex)/(nbTables-tabIndex),
-#					curHumans
-#				))	
-
 			humansToAdd = self.humans[humansIndex:humansIndex+curHumans]
+			#TODO: add bots, count them and remove the -1 below
 			table = Table(humansToAdd, "Tab {}".format(tabIndex), tabIndex, -1, totalHumans)
 			self.tables.append(table)
 			humansIndex += curHumans
 
-#			print ("Table {:2} has {:2} players from {:2.1f} to {:2.1f}"
-#				.format(tabIndex, len(table.players), start, end))
-
-			#print("cur={} min={} max={}".format(len(table.players),popMin, popMax))
-			popMin = min(popMin, len(table.players))
-			popMax = max(popMax, len(table.players))
-			#print("cur={} min={} max={}\n\n".format(len(table.players),popMin, popMax))
-
-
-
-		if (popMax-popMin > 1)	:
-			print ("{:3} humans in {:2} tables (avg={:2.2f}). Min={} Max={}  Delta={}"
-				.format(totalHumans, len(self.tables), (totalHumans-humansIndex)/(nbTables-tabIndex), popMin, popMax, popMax-popMin))
