@@ -57,7 +57,7 @@ class League:
 			humansToAdd = self.humans[humansIndex:humansIndex+curHumans]
 			nbBotsToAdd = Const.PLAYERS_PER_TABLE - curHumans
 			botsToAdd = [Arena.mkBot() for i in range(0, nbBotsToAdd)]
-			table = Table(humansToAdd, "Tab {}".format(tabIndex), tabIndex, totalBots, totalHumans)
+			table = Table(humansToAdd+botsToAdd, "Tab {}".format(tabIndex), tabIndex, totalBots, totalHumans)
 			self.tables.append(table)
 			humansIndex += curHumans
 
