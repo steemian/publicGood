@@ -2,7 +2,7 @@ from Game.Player import Player
 from Game.Context import Context
 from Game.Bet import Bet
 
-class ExamplePlayer(Player):
+class ExShortSighted(Player):
 
 
 	def think(self, context):

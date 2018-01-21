@@ -11,11 +11,16 @@ import Game.Context
 class Arena:
 	
 	availablePlayers = 	[
-		ExamplePlayer,
+		ExShortSighted,
+		ExampleRisker,
+		ExConservative,
+		ExGiver,
+		ExSocial,
 	]
 
 	availableBots = [
-		BotUrchin
+		BotUrchin,
+		BotHonest,
 	]
 
 
@@ -33,6 +38,8 @@ class Arena:
 		self.league = Game.League(self.players)
 		for phaseIndex in range(0, Game.Const.PHASES_PER_GAME):
 			self.runPhase(phaseIndex)
+		self.league.displayResults()
+
 
 
 	def runPhase(self, phaseIndex):
@@ -40,6 +47,17 @@ class Arena:
 		self.league.makeTables(phaseIndex)
 		for roundIndex in range(0, Game.Const.ROUNDS_PER_PHASE):
 			self.runRound(phaseIndex, roundIndex)
+
+		self.league.displayResults()
+		print("")
+		print("")
+		print("")
+		print("")
+		print("")
+		print("")
+		print("")
+		print("")
+		print("")
 
 
 	def runRound(self, phaseIndex, roundIndex):
