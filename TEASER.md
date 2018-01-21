@@ -2,9 +2,13 @@
 
 Here's a new project for Steem! Some fun for programmers and sociologists alike: AI contests. 
 
-<center>
-	![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
-</center>
+<!--
+	<center>
+-->
+			![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+<!--
+	</center>
+-->
 
 I provide a game, inspired by popular game theory case studies, and ask the Steem community to submit algorithms to play that game. Then rewards are split between the best performing AIs.
 
