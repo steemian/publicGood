@@ -4,7 +4,7 @@ Here's a new project for Steem! Some fun for programmers and sociologists alike:
 
 I provide a game, inspired by popular game theory case studies, and ask the Steem community to submit algorithms to play that game. Then rewards are split between the best performing AIs.
 
-*![French](https://s9.postimg.org/6tjwn1573/flag-fr-qc_-_inline.png)(read the [french translation](./TEASER-fr.md))*
+*![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png)(read the [french translation](./TEASER-fr.md))*
 
 ### Alright, but why?
 
