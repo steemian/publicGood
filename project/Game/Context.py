@@ -21,7 +21,7 @@ class PlayerContext:
 
 class Context:
 
-#   playerContexts = {} # a dictionary of (Player.id : playerContext)
+#   playerContexts = {} # a dictionary of (Player.id : playerContext). Some are bots
 #   payouts = []        # a list of the payouts for every past round of this phase
 #   roundIndex = 0      # out of Const.ROUNDS_PER_PHASE
 #   phaseIndex = 0      # out of PHASES_PER_GAME

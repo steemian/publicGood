@@ -15,22 +15,22 @@ Everybody is welcome to submit code. The more, the merrier.
 
 ### The Game
 
-Very simple game indeed, and easy to play, even for AIs. Write a clever AI to play for you
+Very simple game indeed, and easy to play, even for AIs, and psychologically intense. Write a clever AI to play for you!
 
 Each AI will be instantiated XXX times, each one will enter the game with *100 tokens* (completely virtual tokens, this is in no way real money)
-Instances (players) will join tables of ten, then every AI on a table is asked to bet either *10 tokens*, *nothing*, or go *all in*. Then the bank will double the amount received and redistribute the total evenly among players, including those who bet nothing. 
+Instances (players) will join tables of ten, then every AI on a table is asked to bet either *10 tokens*, *nothing*, or go *all in*. Then the bank will double the amount received and redistribute the total evenly among players, including those who gave nothing. 
 Each table will play XXX rounds with the same players, where players know the history (but not the name) of their opponents, and can take decisions accordingly 
-Players will be shuffled again to make new tables, and play a new XXX-round phase, a total of XXX times; playing a total of XXX (XXXxXXX) rounds.
+Players will be shuffled again to make new tables, and play a new XXX-round phase, a total of XXX times; playing a total of XXX (XXXxXXX) rounds. You'll have no information on what your opponents did on previous tables (just their current wealth)
 
 At the end, the players will be ranked on the total wealth of their best instance.
 
 
 ### Strategies
 
-The payoff is maximum when all players on a table go all in, but this is a very risky move, and the richer players on the table won't like it altogether. Betting nothing may be a good decision in real life, but remember that the game only rewards the top 4 players. Build your own strategy, and be clever!
+The payoff is maximum when all players on a table go all in, but this is a very risky move, and the richer players on the table won't like it altogether. Betting nothing may be a good decision in real life, but remember that the Arena only rewards the top 4 AIs. Build your own strategy, and be clever!
 
 
-### The Contest
+### The Rules
 
 Write a python class that inherits the `Player` class and submit it as a comment to this post. You can submit your code either directly in the comment text or as a link to a publicly accessible git repository ([Gist](gist.github.com) is a perfectly valid choice)
 
@@ -86,23 +86,25 @@ class PlayerContext:
 
 class Context:
 
-#   playerContexts = {} # a dictionary of (Player.id : playerContext)
+#   playerContexts = {} # a dictionary of (Player.id : playerContext). Some are bots
 #   payouts = []        # a list of the payouts for every past round of this phase
 #   roundIndex = 0      # out of Const.ROUNDS_PER_PHASE
 #   phaseIndex = 0      # out of PHASES_PER_GAME
 #   totalHumans = 0     # total number of AI (non-filler-bots) in the whole Arena
 #   totalBots = 0       # total number of filler bots. Those are recreated every phase
-#   tableIndex = 0      
+#   tableIndex = 0      # identify the table you're in
 ```
 
 
-Each players will be instantiated XXX times and randomly assigned to tables for every phase. Assignment to table is *not* based on performance from previous phases. Players will be ranked on the performance of *their best single instance*. Approximately 20% short-lived bots will be added to fill holes. Bots will XXXXXXXXXXXXXXXXXXX
+Each players will be instantiated XXX times and randomly assigned to tables for every phase. Assignment to table is *not* based on performance from previous phases. Approximately 20% short-lived bots will be added to fill holes, as evenly as possible. Bots will give ten 80% of the time and be recreated anew for each phase.
 
-Any player that tries to abuse the system, or consumes too much resources will be disqualified
+At the end, players will be ranked on the performance of *their best single instance*
 
-A player that tries to bet 10 while they have not enough wealth to do so will instead go all in. A player that fails to decide will default to all in.
+Any player that tries to abuse the system, or consumes too much resources will be disqualified. No internet access is allowed. Code should be readable and commented
 
-The arena code is publicly available on [github](https://github.com/steemian/publicGood). I'm no python guru, so any comment/issue/pull request is most welcome. Minor changes and bugfixes may be added before the arena
+A player that tries to bet 10 while they have not enough wealth to do so will instead go all in. A player that fails to decide will also default to all in
+
+The arena code is publicly available on [github](https://github.com/steemian/publicGood). Any comment/issue/pull request is most welcome. Minor changes and bugfixes may be added before the arena run
 
 ### The rewards
 
@@ -113,7 +115,7 @@ The arena will be executed in eight days, and the results published shortly afte
 3rd and 4th players: 10% each
 10% are kept for myself
 
-Of course, nothing prevents you from submitting an AI (or more) without upvoting to increase the prize pool. This is also part of the experiment. But given you have nothing to loose, it would be a bad move, wouldn't it?
+Of course, nothing prevents you from submitting an AI without upvoting to increase the prize pool. This is also part of the experiment. But given you have nothing to loose, it would be a bad move, wouldn't it?
 
 
 
