@@ -4,6 +4,8 @@ Submit your code, 90% payout split among winners (50/20/10/10)
 
 Blockchain and crypto currencies have a lot to do with [Game Theory](https://en.wikipedia.org/wiki/Game_theory). For this very first coding contest on Steem, I invite you to submit your code for a bot that will play repeatedly a very simple game: the [*Public Goods Problem*](https://en.wikipedia.org/wiki/Public_goods_game). 
 
+*(read the [french translation](./STEEM-fr.md))*
+
 ### Why A contest ?
 
 The Steem network needs coders, professional and hobbyists alike. We need to develop bots, understand the blockchain, learn to program. And of course we need to have some fun. That's why I start this contest, time will tell if the idea takes off and if more contests will follow.
@@ -24,6 +26,10 @@ Players will be shuffled again to make new tables, and play a new XXX-round phas
 
 At the end, the players will be ranked on the total wealth of their best instance.
 
+And if you want to read more:
+* [Wikipedia on the *Public Goods* game](https://en.wikipedia.org/wiki/Public_goods_game)
+* [Wikipedia on game theory](https://en.wikipedia.org/wiki/Game_theory)
+* [A very scientific article on nature.com](https://www.nature.com/articles/srep26889)
 
 ### Strategies
 
@@ -31,6 +37,8 @@ The payoff is maximum when all players on a table go all in, but this is a very 
 
 
 ### The Rules
+
+*(see a more detailed article on [the rules](./TEASER.md))*
 
 Write a python class that inherits the `Player` class and submit it as a comment to this post. You can submit your code either directly in the comment text or as a link to a publicly accessible git repository ([Gist](gist.github.com) is a perfectly valid choice)
 
