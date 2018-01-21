@@ -1,10 +1,15 @@
+from __future__ import print_function
+
 import random
 import datetime
 
 from Game import *
 from Contrib import *
 
+import sys
 
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
 
 def smokeTest():
 	players = [] 
@@ -182,13 +187,16 @@ def gameStabilityCompared():
 
 	globalStart = datetime.datetime.now()
 
-	for rnds in [5, 30]:
-		for phases in [3, 7]:
-			for insts in [5, 30]:
+	for rnds in [1,10]:
+		for phases in [1, 10]:
+			for insts in [3]:
+				start = datetime.datetime.now()
 				Const.ROUNDS_PER_PHASE = rnds
 				Const.PHASES_PER_GAME = phases
 				Const.INSTANCES_PER_PLAYER = insts
-				gameStability(25)
+				gameStability(2)
+				end = datetime.datetime.now()
+				eprint("Run {}x{} rounds, {} inst -- Duration {}s".format(phases, rnds, insts, end-start))
 
 	print ("\n\n\n\nGLOBAL ELAPSED: {} to {}".format(globalStart, datetime.datetime.now()))
 
