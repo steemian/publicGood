@@ -2,6 +2,8 @@
 
 Here's a new project for Steem! Some fun for programmers and sociologists alike: AI contests. 
 
+![codeBlur](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+
 I provide a game, inspired by popular game theory case studies, and ask the Steem community to submit algorithms to play that game. Then rewards are split between the best performing AIs.
 
 ![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](./TEASER-fr.md))*
@@ -55,7 +57,7 @@ Also, this is a great way to learn programming, isn't it? It's not that hard and
 
 ### Why Python
 
-You may want to learn programming? I want to learn Python. And it's a good language for starters: quick, compact and [easy to learn](python quick tutorial)
+You may want to learn programming? I want to learn Python. And it's a good language for starters: quick, compact and [easy to learn](https://www.google.fr/search?q=python+quick+tutorial)
 
 
 
