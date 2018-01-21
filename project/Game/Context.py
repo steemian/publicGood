@@ -16,7 +16,6 @@ class PlayerContext:
 	def __init__(self, player):
 		self.wealth = player.wealth
 		self.id = player.id
-		self.player = player 		#TODO: remove this: code should not know it
 		self.previousMoves = []
 
 
@@ -49,7 +48,6 @@ class Context:
 			c.previousMoves.append(p.action)
 			c.wealth = p.wealth
 		
-
 		print (self.describe())
 
 
@@ -66,9 +64,8 @@ class Context:
 				self.totalBots)
 
 		for p in self.playerContexts.values():
-			description += "     {:6} ({:15})   {:<4.2f} \t-  [{}];\n".format(
+			description += "     {:6}  {:<4.2f} \t-  [{}];\n".format(
 				p.id,
-				type(p.player).__name__,		#TODO: remove this: code should not know it
 				p.wealth,
 				" ".join(m.asChar() for m in p.previousMoves)
 				)

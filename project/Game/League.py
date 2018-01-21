@@ -69,7 +69,7 @@ class League:
 		print ("-- LEAGUE RESULTS")
 		print ("-----------------------")
 		print ("")
-		print ("{} registered AI with {} instances each".format(len(Arena.availablePlayers), Const.INSTANCES_PER_PLAYER))
+		print ("{} registered AIs with {} instances each".format(len(Arena.availablePlayers), Const.INSTANCES_PER_PLAYER))
 		print ("{} humans and {} short-lived bots dispatched into {} tables (average of {:2.2f} humans per table)".format(
 				len(self.humans), (len(self.tables)*Const.PLAYERS_PER_TABLE) - len(self.humans) ,len(self.tables),  
 				len(self.humans)/len(self.tables)))
