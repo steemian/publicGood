@@ -5,6 +5,11 @@ from Game.Bet import Bet
 class ExamplePlayer(Player):
 
 
+    def getSteemUser(self):
+        return "@gbd"
+
+
+
     def think(self, context):
 
 

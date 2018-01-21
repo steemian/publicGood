@@ -52,8 +52,13 @@ class Player:
         self.decision = Bet.UNDECIDED
 
 
+    def getSteemUser(self):             # override this to return your steem name
+        pass                            
+
     def think(self, context):           # override this
         pass
+
+
 
 ```
 
@@ -65,6 +70,9 @@ from Game.Context import Context
 from Game.Bet import Bet
 
 class ExamplePlayer(Player):
+
+    def getSteemUser(self):
+        return "@gbd"
 
     def think(self, context):
         # First round: bet a regular ten

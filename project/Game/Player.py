@@ -13,8 +13,10 @@ class Player:
         self.decision = Bet.UNDECIDED
         self.name = "[{} {} ({})]".format(name, self.id, type(self).__name__)
 
+    def getSteemUser(self):             # override this to return your steem name
+        raise NotImplementedError("Player is abstract")
 
-    def think(self, context):
+    def think(self, context):           # override this
         raise NotImplementedError("Player is abstract")
 
 
