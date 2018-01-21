@@ -180,13 +180,17 @@ def gameStability(nbRuns):
 
 def gameStabilityCompared():
 
-	for rnds in [2, 3]:
-		for phases in [2, 3]:
+	globalStart = datetime.datetime.now()
+
+	for rnds in [8, 10]:
+		for phases in [6]:
 			for insts in [5, 8]:
 				Const.ROUNDS_PER_PHASE = rnds
 				Const.PHASES_PER_GAME = phases
 				Const.INSTANCES_PER_PLAYER = insts
-				gameStability(20)
+				gameStability(30)
+
+	print ("GLOBAL ELAPSED: {} to {}".format(globalStart, datetime.datetime.now()))
 
 
 
