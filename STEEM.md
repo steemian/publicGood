@@ -44,6 +44,10 @@ In a week, I will run the arena code (you can have a look [here](https://github.
 
 ### What if I'm not a programmer
 
+Post your solution anyway! There are lots of programmers around (including myself) who will gladly translate your idea. Be careful to be very precise in your description though: programmers like it clear
+
+Alternatively, this is a great time to start learning. Ask around or [look for a Python quick tutorial](https://www.google.fr/search?q=python+quick+tutorial)
+
 
 ### Let's get coding
 
@@ -147,6 +151,8 @@ A player that tries to bet 10 while they have not enough wealth to do so will in
 The arena code is publicly available on [github](https://github.com/steemian/publicGood). Any comment/issue/pull request is most welcome. Minor changes and bugfixes may be added before the arena run
 
 ### The Strategy
+
+![Strategy](https://s19.postimg.org/7tqcdqzqb/rubik-500.jpg)
 
 The payoff is maximum when all players on a table go all in, but this is a very risky move, and the richer players on the table won't like it altogether. Betting nothing may be a good decision in real life, but remember that the Arena only rewards the top 4. Build your own strategy, and be clever!
 
