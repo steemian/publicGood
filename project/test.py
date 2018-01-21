@@ -132,7 +132,7 @@ def gameStability():
 
 	timeStart = datetime.datetime.now()
 
-	for gameIndex in range (0, 60):
+	for gameIndex in range (0, 3):
 		currentResult = ""
 		a = Arena()
 		a.runArena()
@@ -150,7 +150,7 @@ def gameStability():
 		sorted(ais, key=lambda key:ais[key].wealth)
 		index = 1
 		for k,v in ais.items():
-			currentResult += "\n{:3} - {:6.2f}   {}".format(index, v.wealth, v.name)
+#			currentResult += "\n{:3} - {:6.2f}   {}".format(index, v.wealth, v.name)
 			aiScores[type(v)].append(index)
 			index += 1
 
@@ -158,40 +158,36 @@ def gameStability():
 
 
 	print ("")
-	print ("***********************************************************************")
-	print ("START AT {}".format(timeStart))
-	print ("END AT {}".format(datetime.datetime.now()))
-	print ("")
-	print ("")
-	print ("")
-	for r in finalResults:
-		print(r)
-		print("")
-		print("--------------------------------------------------------------------------------")
+	print ("Run for {}x{} rounds, {} INSTANCES_PER_PLAYER".format(Const.PHASES_PER_GAME, Const.ROUNDS_PER_PHASE, Const.INSTANCES_PER_PLAYER))
+	print ("TIME {} to {}".format(timeStart, datetime.datetime.now()))
 
-	print ("")
-	print ("***********************************************************************")
-	print ("")
-	print ("")
+
 
 	sorted(aiScores, key=lambda k:sum(aiScores[k]))
 
 
 	for k,v in aiScores.items():
-		print ("{:30} : AVG = {:.3}  - {}".format(
-			k.__name__, 
-			sum(v)/len(v),
-			""))
 
-	print ("")
-	print ("---------")
-	print ("")
+		avg = sum(v)/len(v)
+		var = sum((v[i]-avg)**2  for i in range(0, len(v)))
 
-	for k,v in aiScores.items():
-		print ("{:30} : AVG={:.2}  - {}".format(
+		print ("{:30} : AVG = {:.3}  - StdDev = {:.3} \t- {}".format(
 			k.__name__, 
-			sum(v)/len(v),
+			avg,
+			var**0.5,
 			v))
+
+
+def gameStabilityCompared():
+
+	for rnds in [2, 3]:
+		for phases in [2, 3]:
+			for insts in [5, 8]:
+				Const.ROUNDS_PER_PHASE = rnds
+				Const.PHASES_PER_GAME = phases
+				Const.INSTANCES_PER_PLAYER = insts
+				gameStability()
+
 
 
 
@@ -202,4 +198,6 @@ def gameStability():
 #tablesDispatch()
 #fullGame()
 #instantiateGame()
-gameStability()
+#gameStability()
+
+gameStabilityCompared()
