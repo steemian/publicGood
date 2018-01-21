@@ -17,12 +17,12 @@ class ExSocial(Player):
 
 	def friendlyMove(self, context, friends, roundIndex):
 		if (len(friends) > 4):	# Nearly impossible, but worth trying
-			print ("Social {} found optimal !!!".format(self.id))
+#			print ("Social {} found optimal !!!".format(self.id))
 			return Bet.ALLIN
 
 		if (len(friends) > 2):
 			if (self.id == self.bestInLine(friends)):
-				print ("Social {} feels best in line of {}".format(self.id, len(friends)))
+#				print ("Social {} feels best in line of {}".format(self.id, len(friends)))
 				return Bet.NOTHING
 			else: 
 				#print ("Social {} wants to help".format(self.id))

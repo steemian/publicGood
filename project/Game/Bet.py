@@ -7,6 +7,3 @@ class Bet(Enum):
 	NOTHING = 3
 	ALLIN = 4
 
-
-	def desc(self, arg):
-		print (arg + "youyou")

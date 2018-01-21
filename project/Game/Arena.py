@@ -43,17 +43,17 @@ class Arena:
 
 
 	def runPhase(self, phaseIndex):
-		print ("\n\n\n--PHASE {}".format(phaseIndex))
+#		print ("\n\n\n--PHASE {}".format(phaseIndex))
 		self.league.makeTables(phaseIndex)
 		for roundIndex in range(0, Game.Const.ROUNDS_PER_PHASE):
 			self.runRound(phaseIndex, roundIndex)
 
 #		self.league.displayResults()
-		print("")
-		print("")
-		print("")
-		print("")
-		print("")
+#		print("")
+#		print("")
+#		print("")
+##		print("")
+#		print("")
 
 
 	def runRound(self, phaseIndex, roundIndex):
