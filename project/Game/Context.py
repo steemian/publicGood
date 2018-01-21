@@ -8,10 +8,10 @@ from Game.Bet import Bet
 
 class PlayerContext:
 
-#	wealth = 0;
-#	previousMoves = []
-#	id = ""
-#	player = ""
+#	wealth = 0;				# this player current wealth, as a float
+#	previousMoves = []		# a list of the moves this player made during previous rounds
+#	id = ""					# a random string. Yours is Player.id
+
 
 	def __init__(self, player):
 		self.wealth = player.wealth
@@ -22,13 +22,13 @@ class PlayerContext:
 
 class Context:
 
-#	playerContexts = {}
-#   payouts = []
+#	playerContexts = {} # a dictionary of (Player.id : playerContext)
+#   payouts = []		# a list of the payouts for every past round of this phase
 #	roundIndex = 0		# out of Const.ROUNDS_PER_PHASE
 #	phaseIndex = 0		# out of PHASES_PER_GAME
-#	totalHumans = 0
-# 	totalBots = 0
-#	tableIndex = 0
+#	totalHumans = 0		# total number of AI (non-filler-bots) in the whole Arena
+# 	totalBots = 0		# total number of filler bots in the whole Arena. Those are recreated every phase
+#	tableIndex = 0		
 
 	def __init__(self, players, tableIndex, totalBots, totalHumans):
 		self.payouts = []

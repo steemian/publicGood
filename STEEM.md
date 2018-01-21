@@ -34,11 +34,72 @@ The payoff is maximum when all players on a table go all in, but this is a very 
 
 Write a python class that inherits the `Player` class and submit it as a comment to this post. You can submit your code either directly in the comment text or as a link to a publicly accessible git repository ([Gist](gist.github.com) is a perfectly valid choice)
 
+```
+class Player:
+	
+	def __init__(self, name):
+		self.id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=Const.RANDOM_ID_LEN))
+		self.wealth = Const.STARTING_WEALTH
+		self.action = Bet.UNDECIDED
+		self.decision = Bet.UNDECIDED
+
+
+	def think(self, context):
+		raise NotImplementedError("Player is abstract")
+
+```
+
+Here's a very simple example. Meet your first opponent:
+
+```
+from Game.Player import Player
+from Game.Context import Context
+from Game.Bet import Bet
+
+class ExamplePlayer(Player):
+
+	def think(self, context):
+		# First round bet a regular ten
+		if (context.roundIndex == 0):
+			return Bet.TEN
+
+		# Subsequent rounds: bet ten unless the table had a majority of urchins last turn
+		nbUrchins = sum(c.previousMoves[context.roundIndex-1] == Bet.NOTHING for c in context.playerContexts.values())
+		nbPlayers = len(context.playerContexts.values())
+		if (nbUrchins > 2):
+			return Bet.NOTHING
+		else:
+			return Bet.TEN
+
+```
+
+The context object will give you all informations you need to decide:
+
+``` 
+class PlayerContext:
+
+#	wealth = 0;				# this player current wealth, as a float
+#	previousMoves = []		# a list of the moves this player made during previous rounds
+#	id = ""					# a random string. Yours is Player.id
+
+
+class Context:
+
+#	playerContexts = {} # a dictionary of (Player.id : playerContext)
+#   payouts = []		# a list of the payouts for every past round of this phase
+#	roundIndex = 0		# out of Const.ROUNDS_PER_PHASE
+#	phaseIndex = 0		# out of PHASES_PER_GAME
+#	totalHumans = 0		# total number of AI (non-filler-bots) in the whole Arena
+# 	totalBots = 0		# total number of filler bots in the whole Arena. Those are recreated every phase
+#	tableIndex = 0		
+```
+
+
 Each players will be instantiated XXX times and randomly assigned to tables for every phase. Assignment to table is *not* based on performance from previous phases. Players will be ranked on the performance of *their best single instance*. Approximately 20% short-lived bots will be added to fill holes. Bots will XXXXXXXXXXXXXXXXXXX
 
 Any player that tries to abuse the system, or consumes too much resources will be disqualified
 
-A player that tries to bet 10 while they have not enough wealth to do so will instead go all in
+A player that tries to bet 10 while they have not enough wealth to do so will instead go all in. A player that fails to decide will default to all in.
 
 The arena code is publicly available on [github](https://github.com/steemian/publicGood). I'm no python guru, so any comment/issue/pull request is most welcome. Minor changes and bugfixes may be added before the arena
 

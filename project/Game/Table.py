@@ -33,8 +33,8 @@ class Table:
 			p.decide(contextCopy)
 
 			if (p.action == None or p.action == Bet.UNDECIDED):
-				#p.action = Bet.TEN
-				raise Exception("Undecided bet not allowed at playing time")
+				p.action = Bet.ALLIN
+				#raise Exception("Undecided bet not allowed at playing time")
 
 			if (p.action == Bet.TEN):
 				if (p.wealth >= 10):
