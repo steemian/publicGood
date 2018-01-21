@@ -123,7 +123,7 @@ def instantiateGame():
 	a = Arena()
 	a.runArena()
 
-def gameStability():
+def gameStability(nbRuns):
 
 	finalResults = []
 	aiScores = {}
@@ -132,7 +132,7 @@ def gameStability():
 
 	timeStart = datetime.datetime.now()
 
-	for gameIndex in range (0, 3):
+	for gameIndex in range (0, nbRuns):
 		currentResult = ""
 		a = Arena()
 		a.runArena()
@@ -169,7 +169,7 @@ def gameStability():
 	for k,v in aiScores.items():
 
 		avg = sum(v)/len(v)
-		var = sum((v[i]-avg)**2  for i in range(0, len(v)))
+		var = sum((v[i]-avg)**2  for i in range(0, len(v))) / len(v)
 
 		print ("{:30} : AVG = {:.3}  - StdDev = {:.3} \t- {}".format(
 			k.__name__, 
@@ -186,7 +186,7 @@ def gameStabilityCompared():
 				Const.ROUNDS_PER_PHASE = rnds
 				Const.PHASES_PER_GAME = phases
 				Const.INSTANCES_PER_PLAYER = insts
-				gameStability()
+				gameStability(20)
 
 
 
@@ -198,6 +198,6 @@ def gameStabilityCompared():
 #tablesDispatch()
 #fullGame()
 #instantiateGame()
-#gameStability()
+#gameStability(60)
 
 gameStabilityCompared()
