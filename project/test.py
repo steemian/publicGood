@@ -182,15 +182,15 @@ def gameStabilityCompared():
 
 	globalStart = datetime.datetime.now()
 
-	for rnds in [8, 10]:
-		for phases in [6]:
-			for insts in [5, 8]:
+	for rnds in [5, 30]:
+		for phases in [3, 7]:
+			for insts in [5, 30]:
 				Const.ROUNDS_PER_PHASE = rnds
 				Const.PHASES_PER_GAME = phases
 				Const.INSTANCES_PER_PLAYER = insts
-				gameStability(30)
+				gameStability(25)
 
-	print ("GLOBAL ELAPSED: {} to {}".format(globalStart, datetime.datetime.now()))
+	print ("\n\n\n\nGLOBAL ELAPSED: {} to {}".format(globalStart, datetime.datetime.now()))
 
 
 
