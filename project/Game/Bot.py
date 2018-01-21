@@ -37,9 +37,16 @@ class BotHonest(Bot):
 
 class BotRandom(Bot):
     def think(self, context):
-        return random.choice([  Bet.BOMB, 
-                                Bet.TEN,
+        return random.choice([  Bet.TEN,
                                 Bet.TEN,
                                 Bet.TEN,
                                 Bet.NOTHING,
                                 Bet.ALLIN])
+
+class BotPareto(Bot):
+    def think(self, context):
+        return random.choice([  Bet.TEN,
+                                Bet.TEN,
+                                Bet.TEN,
+                                Bet.TEN,
+                                Bet.NOTHING])        

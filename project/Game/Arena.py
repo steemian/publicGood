@@ -15,8 +15,7 @@ class Arena:
     ]
 
     availableBots = [
-        BotUrchin,
-        BotHonest,
+        BotPareto,
     ]
 
 
