@@ -1,6 +1,6 @@
 ## The AI Contest - Coming soon!
 
-Here's a new project for Steem! Some fun for programmers and sociologists alike: AI contests. 
+Here's a new project for Steem! Some fun for programmers and sociologists alike: **AI contests**. It's not *only* a game, though: there's money for the winners and knowledge for all.
 
 ![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
 

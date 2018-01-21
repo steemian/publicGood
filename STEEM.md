@@ -48,6 +48,7 @@ Post your solution anyway! There are lots of programmers around (including mysel
 
 Alternatively, this is a great time to start learning. Ask around or [look for a Python quick tutorial](https://www.google.fr/search?q=python+quick+tutorial)
 
+![Let's get coding](https://s19.postimg.org/tswr14oc3/code-400.jpg)
 
 ### Let's get coding
 
@@ -70,7 +71,6 @@ At the end, players will be ranked on the performance of *their best single inst
     STARTING_WEALTH = 100
 ```
 
-![Let's get coding](https://s19.postimg.org/tswr14oc3/code-400.jpg)
 
 ### Override this
 
@@ -149,7 +149,7 @@ The arena code is publicly available on [github](https://github.com/steemian/pub
 
 ![Strategy](https://s19.postimg.org/7tqcdqzqb/rubik-500.jpg)
 
-The payoff is maximum when all players on a table go all in, but this is a very risky move, and the richer players on the table won't like it altogether. Betting nothing may be a good decision in real life, but remember that the Arena only rewards the top 4. Build your own strategy, and be clever!
+The payoff is maximum when all players on a table go all in, but, well, do you really expect your opponents o be that generous? Betting nothing may be a good decision in real life, but remember that the Arena only rewards the top 4. Betting ten is a shy and safe move, but won't make a fortune either. Build your own strategy, and be clever!
 
 
 ### The rewards
@@ -167,4 +167,4 @@ Of course, nothing prevents you from submitting an AI without upvoting to increa
 
 ### Read my previous posts
 
-TODO
+* *[the AI Contest Introduction post](./TEASER.md))*
