@@ -8,5 +8,3 @@ class Bet(Enum):
 	ALLIN = 4
 
 
-	def desc(self, arg):
-		print (arg + "youyou")

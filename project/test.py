@@ -1,9 +1,15 @@
+from __future__ import print_function
+
 import random
+import datetime
 
 from Game import *
 from Contrib import *
 
+import sys
 
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
 
 def smokeTest():
 	players = [] 
@@ -95,8 +101,6 @@ def tablesDispatch():
 			print("")
 			print("")
 
-
-
 def fullGame():
 
 	players = []
@@ -119,16 +123,11 @@ def fullGame():
 			print ("\n     ROUND {}.{}".format(phaseIndex, roundIndex))
 			l.playRound(roundIndex)
 
-
-
 def instantiateGame():
 
 	a = Arena()
 
-	#g.players.append(BotRandom("R0"))
-	#g.players.append(BotRandom("R1"))
-	#g.players.append(BotRandom("R2"))
-	#g.players.append(BotUrchin("U3"))
+
 	
 	a.runArena()
 
