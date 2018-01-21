@@ -128,4 +128,4 @@ Of course, nothing prevents you from submitting an AI without upvoting to increa
 
 
 
-
+*(many thanks to the authors I link to, including anonymous Wikipedians)*

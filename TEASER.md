@@ -2,7 +2,7 @@
 
 Here's a new project for Steem! Some fun for programmers and sociologists alike: AI contests. 
 
-![codeBlur](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+<center>![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)<center>
 
 I provide a game, inspired by popular game theory case studies, and ask the Steem community to submit algorithms to play that game. Then rewards are split between the best performing AIs.
 
@@ -24,18 +24,17 @@ And you will help advance cognitive sciences!
 
 Quoting [Wikipedia](https://en.wikipedia.org/wiki/Game_theory): 
 
-***Game theory** is the study of mathematical models of conflict and cooperation between intelligent rational decision-makers*
+<center>![Wikipedia](https://s19.postimg.org/58g6clfur/2018-01-21_14_55_46-_Game_theory_-_Wikipedia.png)</center>center>
 
-In short, it's studying how people react to situations that look like a game, when they can win or loose from the situation, depending on other people' choices. It's both mathematics and psychology. You get addict. And it has lots and lots of applications in how people react to the blockchain technologies, no need to explain that to you steemains.
+In short, it's studying how people react to situations that look like a game, when they can win or loose from the situation, depending on other people' choices. It's both mathematics, economics and psychology. You get addict. And it has lots and lots of applications in how people react to the blockchain technologies, no need to explain that to you steemains.
 
-For a starter, go for the [prisonner's dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma)
+For a starter, go for the [prisonner's dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma). And once you got the idea, listen to [XKCD](https://xkcd.com/601/)'s view on game theory
 
+![XKCD](https://imgs.xkcd.com/comics/game_theory.png)
 
 ### I heard contest. How does it work?
 
 It's free to get in, and some prize money will be shared between winners. If you're a seasoned steemian you should be familiar with the concept. If not, then read about the magic of the Steem network [here](https://steemit.com/steem/@vinnu/what-is-steem-and-how-does-it-work)  or [here (more technical)](https://steemit.com/steem/@tuck-fheman/what-is-steem) or [here if you have time](https://steemit.com/steemy/@flauwy/60-steem-video-tutorials-for-beginners-the-grand-steemy-collection). 
-
-*(many thanks to the authors I link to, including anonymous Wikipedians)*
 
 More technically, 90% authoring rewards from contest posts (including this one, translations and comments) will be shared by contest winners. Contests should happen every week and payout should come shortly after.
 
@@ -45,6 +44,7 @@ The rules are simple:
 * after one week I will make your answers compete with one another, write a report
 * ... and redistribute prizes
 
+<center>![Choose](https://steemitimages.com/0x0/https://s-media-cache-ak0.pinimg.com/originals/49/10/a2/4910a224743397d4b416e0be175b030e.gif)</center>
 
 ### Do I need to be a programmer
 
@@ -66,3 +66,6 @@ You may want to learn programming? I want to learn Python. And it's a good langu
 Tomorrow!
 
 I will post the first contest tomorrow around noon CEST, with [**AiContest**](https://steemit.com/created/aicontest) tag. Stay tuned!
+
+
+*(many thanks to the authors I link to, including anonymous Wikipedians)*
