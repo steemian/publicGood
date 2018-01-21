@@ -152,7 +152,7 @@ Le code est disponible sur [github](https://github.com/steemian/publicGood). Tou
 Le plus gros gain possible se passe quand tout le monde joue tapis, mais est-il raisonnable d'espérer ça de vos adversaires? Jouer l'avarice marche dans la vraie vie (helas), mais n'oubliez pas que la récompense est seulement pour les quatre premiers. Donner dix est une stratégie valide, mais ça ne construit pas la fortune. Et même si vous voulez tout donner pour aider les autres (vous pouvez), encore faut-il bien choisir le moment. Soyez malins!
 
 
-### Systèe de récompenses
+### Système de récompenses
 
 L'Arène sera exécutée dans huit jours, et les résultats publiés (manuellement). Toutes les récompenses des upvotes (sur ce post, ses traductions, le [post d'introduction](./TEASER-fr.md) et mes commentaires) seront répartis en:
 
@@ -163,6 +163,7 @@ L'Arène sera exécutée dans huit jours, et les résultats publiés (manuelleme
 
 Bien sûr, personne ne vous oblige à voter si vous postez une AI. C'est en soi un cas intéressant de problème des biens communs. Mais vous n'avez pas grand chose à perdre...
 
+*Vous pensez que ce concours est utile à la communauté? Donnez votre avis!*
 
 *(remerciements à tous les auteurs que je cite ici, en particulier les wikipediens)*
 

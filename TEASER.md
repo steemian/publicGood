@@ -72,5 +72,6 @@ Tomorrow!
 
 I will post the first contest tomorrow around noon CEST, with [**AiContest**](https://steemit.com/created/aicontest) tag. Stay tuned!
 
+*Do you think this contest is useful for the community? Tell me your opinion!*
 
 *(many thanks to the authors I link to, including anonymous Wikipedians)*

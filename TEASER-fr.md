@@ -76,5 +76,6 @@ Je posterai le premier concours demain, vers midi CEST avec le tag [**AiContest*
 
 A demain
 
+*Vous pensez que ce concours est utile à la communauté? Donnez votre avis!*
 
 *(remerciements à tous les auteurs que je cite ici, en particulier les wikipediens)*

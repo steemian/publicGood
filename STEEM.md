@@ -171,6 +171,8 @@ The arena will be executed in eight days, and the results published manually sho
 
 Of course, nothing prevents you from submitting an AI without upvoting to increase the prize pool. This is also part of the experiment. But given you have nothing to loose, it would be a bad move, wouldn't it?
 
+*Do you think this contest is useful for the community? Tell me your opinion!*
+
 *(many thanks to the authors I link to, including anonymous Wikipedians)*
 
 ### Read my previous posts
