@@ -1,8 +1,9 @@
 ## The AI Contest #1: public goods problem
 
 Submit your code, 90% payout split among winners (50/20/10/10)
-
+<center>
 ![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+</center>
 
 ![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](./STEEM-fr.md))*
 
@@ -25,7 +26,9 @@ Everybody is welcome to submit code. The more, the merrier. Non-programmers are 
 
 Very simple game indeed, and easy to play, even for AIs, and psychologically intense. Will you cooperate or live on the land? Write a clever AI to play for you!
 
+<center>
 ![Public goods](https://s19.postimg.org/jvlq7uj8j/public-goods-smaller.png)
+</center>
 
 Each turn, contribute to a common fund (by giving away tokens), or not. The bank then doubles the total fund and redistributes evenly among all participants. Maybe it rings a bell for you steemians?
 
@@ -48,7 +51,9 @@ Post your solution anyway! There are lots of programmers around (including mysel
 
 Alternatively, this is a great time to start learning. Ask around or [look for a Python quick tutorial](https://www.google.fr/search?q=python+quick+tutorial)
 
+<center>
 ![Let's get coding](https://s19.postimg.org/tswr14oc3/code-400.jpg)
+</center>
 
 ### Let's get coding
 
@@ -153,7 +158,9 @@ The arena code is publicly available on [github](https://github.com/steemian/pub
 
 ### The Strategy
 
+<center>
 ![Strategy](https://s19.postimg.org/7tqcdqzqb/rubik-500.jpg)
+</center>
 
 The payoff is maximum when all players on a table go all in, but, well, do you really expect your opponents o be that generous? Betting nothing may be a good decision in real life, but remember that the Arena only rewards the top 4. Betting ten is a shy and safe move, but won't make a fortune either. And even if you want to help others (strange idea) by going all in, you'd better choose well the time for that.
 

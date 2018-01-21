@@ -2,7 +2,9 @@
 
 Postez votre AI, 90% des récompenses partagées entre les gagnants
 
+<center>
 ![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+</center>
 
 ![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *([Article en anglais](./STEEM.md))*
 
@@ -26,7 +28,9 @@ Toute contribution est la bienvenue, même les programmeurs débutants, même le
 
 C'est un jeu très basique, une simple illustration de la théorie. Facile à jouer pour une intelligence artificielle, et néanmoins intense psychologiquement. Allez-vous coopérer pour le bien commun, ou rester oisif et profiter du travail des autres? 
 
+<center>
 ![Public goods](https://s19.postimg.org/jvlq7uj8j/public-goods-smaller.png)
+</center>
 
 Chaque tour, chaque joueur peut contribuer au bien commun en donnant des jetons virtuels, ou non. La banque double ensuite le total et redistribue à tous les joueurs, y compris ceux qui n'ont rien donné. Un peu comme dans l'économie réelle, et beaucoup comme sur STEEM.
 
@@ -49,7 +53,9 @@ Postez votre solution en bon français. Il y a beaucoup de programmeurs qui se f
 
 Ou bien [apprenez à programmer](https://www.google.fr/search?q=python+quick+tutorial). C'est le moment!
 
+<center>
 ![Let's get coding](https://s19.postimg.org/tswr14oc3/code-400.jpg)
+</center>
 
 ### Au boulot !
 
@@ -147,7 +153,9 @@ Le code est disponible sur [github](https://github.com/steemian/publicGood). Tou
 
 ### Stratégie
 
+<center>
 ![Strategy](https://s19.postimg.org/7tqcdqzqb/rubik-500.jpg)
+</center>
 
 Le plus gros gain possible se passe quand tout le monde joue tapis, mais est-il raisonnable d'espérer ça de vos adversaires? Jouer l'avarice marche dans la vraie vie (helas), mais n'oubliez pas que la récompense est seulement pour les quatre premiers. Donner dix est une stratégie valide, mais ça ne construit pas la fortune. Et même si vous voulez tout donner pour aider les autres (vous pouvez), encore faut-il bien choisir le moment. Soyez malins!
 
