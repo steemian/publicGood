@@ -45,20 +45,6 @@ class Context:
 	def update(self, players, payout):
 		self.payouts.append(payout)
 		for p in players:	
-
-
-			if (type(p.action) == type(None)):
-				print("")
-				print("*********************************")
-				print("")
-				print (p)
-				print (p.action)
-				print (type(p.action))
-				print (self.describe())
-				print("")
-				raise Exception("Incompatible type")
-
-
 			c = self.playerContexts[p.id]
 			c.previousMoves.append(p.action)
 			c.wealth = p.wealth
@@ -84,23 +70,10 @@ class Context:
 				p.id,
 				type(p.player).__name__,		#TODO: remove this: code should not know it
 				p.wealth,
-				" ".join(self.shortEnum(m) for m in p.previousMoves)
+				" ".join(m.asChar() for m in p.previousMoves)
 				)
 
 		return description
 
-	def shortEnum(self, bet):
-		if (bet == Bet.NOTHING):
-			return "0"
-		if (bet == Bet.TEN):
-			return "1"
-		if (bet == Bet.ALLIN):
-			return "A"
-		if (bet == Bet.BOMB):
-			return "#"
-		if (bet == None):
-			return "."
-		if (bet == UNDECIDED):
-			return "?"
 
 				

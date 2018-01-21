@@ -7,3 +7,15 @@ class Bet(Enum):
 	ALLIN = 4
 
 
+	def asChar(self):
+		if (self == Bet.NOTHING):
+			return "0"
+		if (self == Bet.TEN):
+			return "1"
+		if (self == Bet.ALLIN):
+			return "A"
+		if (self == None):
+			return "."
+		if (self == UNDECIDED):
+			return "?"
+
