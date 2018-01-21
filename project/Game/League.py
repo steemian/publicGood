@@ -18,7 +18,6 @@ class League:
 		self.humans = humans
 		for h in humans:
 			h.wealth = Const.STARTING_WEALTH
-			h.bombs = Const.STARTING_BOMBS
 
 	def totalPlayersInTables(self):
 		toreturn = 0

@@ -7,7 +7,6 @@ from Game.Const import Const
 class Player:
 	
 #	wealth = 100
-#	bombs = 1
 #	action = Bet.UNDECIDED
 #	decision = Bet.UNDECIDED
 #	id = 0
@@ -15,7 +14,6 @@ class Player:
 	def __init__(self, name):
 		self.id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=Const.RANDOM_ID_LEN))
 		self.wealth = Const.STARTING_WEALTH
-		self.bombs = Const.STARTING_BOMBS
 		self.action = Bet.UNDECIDED
 		self.decision = Bet.UNDECIDED
 		# TODO: name is probably useless

@@ -45,13 +45,6 @@ class Table:
 #						.format(p.wealth))
 					p.action = Bet.ALLIN
 
-			if (p.action ==Bet.BOMB):
-				if (p.bombs >= 1):
-					p.bombs -= 1
-					self.bombs += 1
-				else:
-					p.action = Bet.NOTHING
-
 			if (p.action == Bet.ALLIN):
 				self.pot += p.wealth
 				p.wealth = 0
@@ -68,10 +61,6 @@ class Table:
 		for p in list(self.players):
 			p.wealth += payout
 			
-			# If you forgot you had no bomb left, you may die from other bombers. Sad story.
-			if (self.bombs > 0 and p.action == Bet.NOTHING):
-				self.players.remove(p)
-
 
 #			print ("{:25} bets {:>9}-{:9} - {}{:3.2f} -> {}{:3.2f}  {}".format(
 #					p.name, 
