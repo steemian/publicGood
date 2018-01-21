@@ -63,6 +63,7 @@ Also, this is a great way to learn programming, isn't it? It's not that hard and
 
 You may want to learn programming? I want to learn Python. And it's a good language for starters: quick, compact and [easy to learn](https://www.google.fr/search?q=python+quick+tutorial)
 
+![Python-logo](https://www.python.org/static/community_logos/python-logo-generic.svg)
 
 
 ### So where's the contest?
