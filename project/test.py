@@ -163,7 +163,8 @@ def gameStability(nbRuns):
 
 
 	print ("")
-	print ("Run for {}x{} rounds, {} INSTANCES_PER_PLAYER".format(Const.PHASES_PER_GAME, Const.ROUNDS_PER_PHASE, Const.INSTANCES_PER_PLAYER))
+	print ("Run for {}x{} rounds, {} instances, {} runs".format(
+		Const.PHASES_PER_GAME, Const.ROUNDS_PER_PHASE, Const.INSTANCES_PER_PLAYER, nbRuns))
 	print ("TIME {} to {}".format(timeStart, datetime.datetime.now()))
 
 
@@ -176,7 +177,7 @@ def gameStability(nbRuns):
 		avg = sum(v)/len(v)
 		var = sum((v[i]-avg)**2  for i in range(0, len(v))) / len(v)
 
-		print ("{:30} : AVG = {:.3}  - StdDev = {:.3} \t- {}".format(
+		print ("{:30} : AVG = {:.3}  - StdDev = {:.3}   \t- {}".format(
 			k.__name__, 
 			avg,
 			var**0.5,
@@ -187,16 +188,17 @@ def gameStabilityCompared():
 
 	globalStart = datetime.datetime.now()
 
-	for rnds in [1,10]:
-		for phases in [1, 10]:
-			for insts in [3]:
-				start = datetime.datetime.now()
-				Const.ROUNDS_PER_PHASE = rnds
-				Const.PHASES_PER_GAME = phases
-				Const.INSTANCES_PER_PLAYER = insts
-				gameStability(2)
-				end = datetime.datetime.now()
-				eprint("Run {}x{} rounds, {} inst -- Duration {}s".format(phases, rnds, insts, end-start))
+	for rnds in [10]:
+		for phases in [6]:
+			for insts in [2,8,50,200]:
+				for runs in [20]:
+					start = datetime.datetime.now()
+					Const.ROUNDS_PER_PHASE = rnds
+					Const.PHASES_PER_GAME = phases
+					Const.INSTANCES_PER_PLAYER = insts
+					gameStability(runs)
+					end = datetime.datetime.now()
+					eprint("Run {}x{} rounds, {} inst , {} runs -- Duration {}s".format(phases, rnds, insts, runs, end-start))
 
 	print ("\n\n\n\nGLOBAL ELAPSED: {} to {}".format(globalStart, datetime.datetime.now()))
 
