@@ -41,8 +41,8 @@ class Table:
 					p.wealth -= 10
 					self.pot += 10
 				else:
-					print ("Player owns {}. Fallback to AllIn"
-						.format(p.wealth))
+#					print ("Player owns {}. Fallback to AllIn"
+#						.format(p.wealth))
 					p.action = Bet.ALLIN
 
 			if (p.action ==Bet.BOMB):
