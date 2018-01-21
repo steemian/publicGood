@@ -2,7 +2,9 @@
 
 Here's a new project for Steem! Some fun for programmers and sociologists alike: AI contests. 
 
-<center>![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)<center>
+<center>
+	![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+</center>
 
 I provide a game, inspired by popular game theory case studies, and ask the Steem community to submit algorithms to play that game. Then rewards are split between the best performing AIs.
 
@@ -24,13 +26,18 @@ And you will help advance cognitive sciences!
 
 Quoting [Wikipedia](https://en.wikipedia.org/wiki/Game_theory): 
 
-<center>![Wikipedia](https://s19.postimg.org/58g6clfur/2018-01-21_14_55_46-_Game_theory_-_Wikipedia.png)</center>center>
+<center>
+	![Wikipedia](https://s19.postimg.org/58g6clfur/2018-01-21_14_55_46-_Game_theory_-_Wikipedia.png)
+</center>
 
 In short, it's studying how people react to situations that look like a game, when they can win or loose from the situation, depending on other people' choices. It's both mathematics, economics and psychology. You get addict. And it has lots and lots of applications in how people react to the blockchain technologies, no need to explain that to you steemains.
 
 For a starter, go for the [prisonner's dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma). And once you got the idea, listen to [XKCD](https://xkcd.com/601/)'s view on game theory
 
-![XKCD](https://imgs.xkcd.com/comics/game_theory.png)
+<center>
+	![XKCD](https://imgs.xkcd.com/comics/game_theory.png)
+</center>
+
 
 ### I heard contest. How does it work?
 
@@ -44,7 +51,9 @@ The rules are simple:
 * after one week I will make your answers compete with one another, write a report
 * ... and redistribute prizes
 
-<center>![Choose](https://steemitimages.com/0x0/https://s-media-cache-ak0.pinimg.com/originals/49/10/a2/4910a224743397d4b416e0be175b030e.gif)</center>
+<center>
+	![Choose](https://steemitimages.com/0x0/https://s-media-cache-ak0.pinimg.com/originals/49/10/a2/4910a224743397d4b416e0be175b030e.gif)
+</center>
 
 ### Do I need to be a programmer
 
