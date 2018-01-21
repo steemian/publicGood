@@ -9,45 +9,45 @@ import Game.Context
 
 
 class Arena:
-	
-	availablePlayers = 	[
-		ExamplePlayer,
-	]
+    
+    availablePlayers =  [
+        ExamplePlayer,
+    ]
 
-	availableBots = [
-		BotUrchin,
-		BotHonest,
-	]
-
-
+    availableBots = [
+        BotUrchin,
+        BotHonest,
+    ]
 
 
 
-	def __init__(self):
-		self.players  = []
-		for i in range(0, Game.Const.INSTANCES_PER_PLAYER):
-			for p in self.availablePlayers:
-				self.players.append(p(""))
 
 
-	def runArena(self):
-		self.league = Game.League(self.players)
-		for phaseIndex in range(0, Game.Const.PHASES_PER_GAME):
-			self.runPhase(phaseIndex)
+    def __init__(self):
+        self.players  = []
+        for i in range(0, Game.Const.INSTANCES_PER_PLAYER):
+            for p in self.availablePlayers:
+                self.players.append(p(""))
 
 
-	def runPhase(self, phaseIndex):
-		print ("\n\n\n--PHASE {}".format(phaseIndex))
-		self.league.makeTables(phaseIndex)
-		for roundIndex in range(0, Game.Const.ROUNDS_PER_PHASE):
-			self.runRound(phaseIndex, roundIndex)
+    def runArena(self):
+        self.league = Game.League(self.players)
+        for phaseIndex in range(0, Game.Const.PHASES_PER_GAME):
+            self.runPhase(phaseIndex)
 
 
-	def runRound(self, phaseIndex, roundIndex):
-		self.league.playRound(phaseIndex, roundIndex)			
+    def runPhase(self, phaseIndex):
+        print ("\n\n\n--PHASE {}".format(phaseIndex))
+        self.league.makeTables(phaseIndex)
+        for roundIndex in range(0, Game.Const.ROUNDS_PER_PHASE):
+            self.runRound(phaseIndex, roundIndex)
 
 
-	def mkBot():
-		return random.choice(Arena.availableBots)("")
+    def runRound(self, phaseIndex, roundIndex):
+        self.league.playRound(phaseIndex, roundIndex)           
+
+
+    def mkBot():
+        return random.choice(Arena.availableBots)("")
 
 

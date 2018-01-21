@@ -2,7 +2,7 @@
 
 
 :INFINITE
-	cls
-	python __main__.py
-	pause
-	goto INFINITE
+    cls
+    python __main__.py
+    pause
+    goto INFINITE
