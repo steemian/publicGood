@@ -38,7 +38,7 @@ Write a python class that inherits the `Player` class and submit it as a comment
 class Player:
 	
 	def __init__(self, name):
-		self.id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=Const.RANDOM_ID_LEN))
+		self.id = ... 							# a random string
 		self.wealth = Const.STARTING_WEALTH
 		self.action = Bet.UNDECIDED
 		self.decision = Bet.UNDECIDED
@@ -59,12 +59,13 @@ from Game.Bet import Bet
 class ExamplePlayer(Player):
 
 	def think(self, context):
-		# First round bet a regular ten
+		# First round: bet a regular ten
 		if (context.roundIndex == 0):
 			return Bet.TEN
 
-		# Subsequent rounds: bet ten unless the table had a majority of urchins last turn
-		nbUrchins = sum(c.previousMoves[context.roundIndex-1] == Bet.NOTHING for c in context.playerContexts.values())
+		# Subsequent rounds: bet ten unless your opponents are rats
+		nbUrchins = sum(c.previousMoves[context.roundIndex-1] == Bet.NOTHING 
+						for c in context.playerContexts.values())
 		nbPlayers = len(context.playerContexts.values())
 		if (nbUrchins > 2):
 			return Bet.NOTHING
@@ -90,7 +91,7 @@ class Context:
 #	roundIndex = 0		# out of Const.ROUNDS_PER_PHASE
 #	phaseIndex = 0		# out of PHASES_PER_GAME
 #	totalHumans = 0		# total number of AI (non-filler-bots) in the whole Arena
-# 	totalBots = 0		# total number of filler bots in the whole Arena. Those are recreated every phase
+# 	totalBots = 0		# total number of filler bots. Those are recreated every phase
 #	tableIndex = 0		
 ```
 
