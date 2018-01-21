@@ -1,4 +1,4 @@
-## Coding contest: public goods problem
+## The AI Contest #1: public goods problem
 
 Submit your code, 90% payout split among winners (50/20/10/10)
 

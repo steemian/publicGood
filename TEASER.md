@@ -1,4 +1,4 @@
-## The AI contest - Coming soon!
+## The AI Contest - Coming soon!
 
 Here's a new project for Steem! Some fun for programmers and sociologists alike: AI contests. 
 
