@@ -4,7 +4,7 @@ Submit your code, 90% payout split among winners (50/20/10/10)
 
 Blockchain and crypto currencies have a lot to do with [Game Theory](https://en.wikipedia.org/wiki/Game_theory). For this very first coding contest on Steem, I invite you to submit your code for a bot that will play repeatedly a very simple game: the [*Public Goods Problem*](https://en.wikipedia.org/wiki/Public_goods_game). 
 
-*(read the [french translation](./STEEM-fr.md))*
+![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](./STEEM-fr.md))*
 
 ### Why A contest ?
 
