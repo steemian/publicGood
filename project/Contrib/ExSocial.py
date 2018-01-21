@@ -29,7 +29,7 @@ class ExSocial(Player):
 				return Bet.ALLIN
 
 		# if not enough friends found, play it safe
-		return Bet.TEN
+		return Bet.NOTHING
 
 
 
@@ -77,7 +77,7 @@ class ExSocial(Player):
 #			print (context.describe())
 
 		move = self.friendlyMove(context, friends, context.roundIndex)
-		print ("SOCIAL move {} {}".format(self.id, move.name))
+#		print ("SOCIAL move {} {}".format(self.id, move.name))
 
 		return move
 
