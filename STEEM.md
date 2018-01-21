@@ -18,7 +18,7 @@ The Steem network needs coders, professional and hobbyists alike. We need to dev
 
 Also, we may be doing our little share in advancing the fields of games theory and experimental economy, which are so dear to us steemians.
 
-Everybody is welcome to submit code. The more, the merrier.
+Everybody is welcome to submit code. The more, the merrier. Non-programmers are welcome too (see below)
 
 
 ### The Game
@@ -27,9 +27,9 @@ Very simple game indeed, and easy to play, even for AIs, and psychologically int
 
 ![Public goods](https://s19.postimg.org/jvlq7uj8j/public-goods-smaller.png)
 
-Each turn, contribute to a common fund, or not. The bank then doubles the total fund and redistributes evenly among all participants. Maybe it rings a bell for you steemians?
+Each turn, contribute to a common fund (by giving away tokens), or not. The bank then doubles the total fund and redistributes evenly among all participants. Maybe it rings a bell for you steemians?
 
-Richest AI when the game ends wins
+Richest AI (token-wise) when the game ends wins
 
 And if you want to read more:
 * [Wikipedia on the *Public Goods* game](https://en.wikipedia.org/wiki/Public_goods_game)
@@ -38,7 +38,7 @@ And if you want to read more:
 
 ### The Arena (where your AIs will compete)
 
-Write a python class that inherits `Player` (see below) and submit it as a comment to this post. You can submit your code either directly in the comment text or as a link to a publicly accessible git repository ([Gist](gist.github.com) is a great choice)
+Write a python class that inherits `Player` (see below) and submit it as a comment to this post. If you don't know Python, or if you can't write programs at all you can still participate, just read on. You can submit your code either directly in the comment text or as a link to a publicly accessible git repository ([Gist](gist.github.com) is a great choice)
 
 In a week, I will run the arena code (you can have a look [here](https://github.com/steemian/publicGood) although it may change before the Arena run), publish the leaderboard and split the rewards
 
@@ -58,7 +58,7 @@ Assignment to table is random and *not* based on performance from previous phase
 
 Once players sit on the table, everyone is asked to bet either *10 tokens*, *nothing*, or go *all in*. Then the bank will double the amount received and redistribute the total evenly among players, including those who gave nothing 
 
-Each table will play `ROUNDS_PER_PHASE` rounds with the same players, where players know the history (but not the name) of their opponents, and can take decisions accordingly. Players will be shuffled again to make new tables (with new bots), and play a new `ROUNDS_PER_PHASE`-round phase, a total of `PHASES_PER_GAME` times; playing a total of (`PHASES_PER_GAME` x `ROUNDS_PER_PHASE`) rounds. You'll have no information on what your opponents did on previous tables (only their current wealth)
+Each table will play `ROUNDS_PER_PHASE` rounds with the same players (learn to know each other), where players know the history (but not the name) of their opponents, and can take decisions accordingly. Players will be shuffled again to make new tables (with new bots), and play a new `ROUNDS_PER_PHASE`-round phase, a total of `PHASES_PER_GAME` times; playing a total of (`PHASES_PER_GAME` x `ROUNDS_PER_PHASE`) rounds. You'll have no information on what your opponents did on previous tables (only their current wealth)
 
 At the end, players will be ranked on the performance of *their best single instance*
 
@@ -149,12 +149,14 @@ The arena code is publicly available on [github](https://github.com/steemian/pub
 
 ![Strategy](https://s19.postimg.org/7tqcdqzqb/rubik-500.jpg)
 
-The payoff is maximum when all players on a table go all in, but, well, do you really expect your opponents o be that generous? Betting nothing may be a good decision in real life, but remember that the Arena only rewards the top 4. Betting ten is a shy and safe move, but won't make a fortune either. Build your own strategy, and be clever!
+The payoff is maximum when all players on a table go all in, but, well, do you really expect your opponents o be that generous? Betting nothing may be a good decision in real life, but remember that the Arena only rewards the top 4. Betting ten is a shy and safe move, but won't make a fortune either. And even if you want to help others (strange idea) by going all in, you'd better choose well the time for that.
+
+Build your own strategy, and be clever!
 
 
 ### The rewards
 
-The arena will be executed in eight days, and the results published manually shortly after. All rewards from upvotes to this post and to my comments will be split between the winners:
+The arena will be executed in eight days, and the results published manually shortly after. All rewards from upvotes to this post, its translations, the [introductory post](./TEASER.md) and to my comments will be split between the winners:
 
 * 1st player: 50% of total rewards
 * 2nd player: 20%
@@ -167,4 +169,4 @@ Of course, nothing prevents you from submitting an AI without upvoting to increa
 
 ### Read my previous posts
 
-* *[the AI Contest Introduction post](./TEASER.md))*
+* *[the AI Contest Introduction post](./TEASER.md))* (or [in French](./TEASER-fr.md) ![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png))
