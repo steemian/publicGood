@@ -73,7 +73,7 @@ class ExamplePlayer(Player):
 
 ```
 
-The context object will give you all informations you need to decide:
+A fresh copy of the context object will give you all informations you need to decide (updated every round):
 
 ``` 
 class PlayerContext:
