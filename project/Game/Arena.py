@@ -48,11 +48,7 @@ class Arena:
 		for roundIndex in range(0, Game.Const.ROUNDS_PER_PHASE):
 			self.runRound(phaseIndex, roundIndex)
 
-		self.league.displayResults()
-		print("")
-		print("")
-		print("")
-		print("")
+#		self.league.displayResults()
 		print("")
 		print("")
 		print("")

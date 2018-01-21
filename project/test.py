@@ -1,4 +1,5 @@
 import random
+import datetime
 
 from Game import *
 from Contrib import *
@@ -95,8 +96,6 @@ def tablesDispatch():
 			print("")
 			print("")
 
-
-
 def fullGame():
 
 	players = []
@@ -119,19 +118,80 @@ def fullGame():
 			print ("\n     ROUND {}.{}".format(phaseIndex, roundIndex))
 			l.playRound(roundIndex)
 
-
-
 def instantiateGame():
 
 	a = Arena()
-
-	#g.players.append(BotRandom("R0"))
-	#g.players.append(BotRandom("R1"))
-	#g.players.append(BotRandom("R2"))
-	#g.players.append(BotUrchin("U3"))
-	
 	a.runArena()
 
+def gameStability():
+
+	finalResults = []
+	aiScores = {}
+	for ai in Arena.availablePlayers:
+		aiScores[ai] = []
+
+	timeStart = datetime.datetime.now()
+
+	for gameIndex in range (0, 60):
+		currentResult = ""
+		a = Arena()
+		a.runArena()
+
+
+		ais = {}
+		for p in a.league.humans:
+			name = type(p).__name__
+			if (name in  ais):
+				if (p.wealth > ais[name].wealth):
+					ais[name] = p
+			else:
+				ais[name] = p
+
+		sorted(ais, key=lambda key:ais[key].wealth)
+		index = 1
+		for k,v in ais.items():
+			currentResult += "\n{:3} - {:6.2f}   {}".format(index, v.wealth, v.name)
+			aiScores[type(v)].append(index)
+			index += 1
+
+		finalResults.append(currentResult)
+
+
+	print ("")
+	print ("***********************************************************************")
+	print ("START AT {}".format(timeStart))
+	print ("END AT {}".format(datetime.datetime.now()))
+	print ("")
+	print ("")
+	print ("")
+	for r in finalResults:
+		print(r)
+		print("")
+		print("--------------------------------------------------------------------------------")
+
+	print ("")
+	print ("***********************************************************************")
+	print ("")
+	print ("")
+
+	sorted(aiScores, key=lambda k:sum(aiScores[k]))
+
+
+	for k,v in aiScores.items():
+		print ("{:30} : AVG = {:.3}  - {}".format(
+			k.__name__, 
+			sum(v)/len(v),
+			""))
+
+	print ("")
+	print ("---------")
+	print ("")
+
+	for k,v in aiScores.items():
+		print ("{:30} : AVG={:.2}  - {}".format(
+			k.__name__, 
+			sum(v)/len(v),
+			v))
 
 
 
@@ -141,4 +201,5 @@ def instantiateGame():
 #populateTable()
 #tablesDispatch()
 #fullGame()
-instantiateGame()
+#instantiateGame()
+gameStability()

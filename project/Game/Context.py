@@ -64,7 +64,7 @@ class Context:
 			c.wealth = p.wealth
 		
 
-		print (self.describe())
+#		print (self.describe())
 
 
 	def describe(self):
