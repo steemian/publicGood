@@ -13,9 +13,9 @@ You're on Steem, right? As you know life of the community depends on two things:
 * Programmers
 * Understanding people and how they react
 
-*The AI Contest* is providing a fun way to mix those two ideas. You want to better understand how community reacts to a problem? You want to learn coding? Psychology? Just relax a little from the Steem bot you are writing? Just hop in the contest, it's free to get in and some cash will come at the end.
+**The AI Contest** is providing a fun way to mix those two ideas. You want to better understand how community reacts to a problem? You want to learn coding? Psychology? Just relax a little from the Steem bot you are writing? Just hop in the contest, it's free to get in and some cash will come at the end.
 
-And you will help cognitive sciences!
+And you will help advance cognitive sciences!
 
 
 ### Why is that mess about games?
@@ -40,23 +40,27 @@ More technically, 90% authoring rewards from contest posts (including this one, 
 The rules are simple: 
 * give your answer to the contest as a comment. You may submit several answers. You can post code, alink to a [Gist](gist.github.com) or simply an English explanation
 * upvote to add rewards to the pool (of course you don't *have to* but it wouldn't be fair) 
-* after one week I will make your answers compete with one another
+* after one week I will make your answers compete with one another, write a report
 * ... and redistribute prizes
 
 
 ### Do I need to be a programmer
 
-Yes. No. It's easier if you can post an answer that is written in Python. But I guess tere will be people around to help you translate an idea to Python. I will gladly do my share
+No. Lots of people around are, and they will surely help you translate an idea to Python. I will gladly do my share
 
 The most important thing in playing a game is not writing the bot, it's being clever!
 
-I chose Python. It's a good language: quick, compact and [easy to learn](python quick tutorial). Not one I'm very familiar with, but I'm learning.
+Also, this is a great way to learn programming, isn't it? It's not that hard and a little knowledge a great asset for every steemian
 
-**Plus**: this is a great way to learn programming. It's easy and it's a great asset for you!
+
+### Why Python
+
+You may want to learn programming? I want to learn Python. And it's a good language for starters: quick, compact and [easy to learn](python quick tutorial)
+
 
 
 ### So where's the contest?
 
 Tomorrow!
 
-I will post the first contest tomorrow around noon CEST, with . Stay tuned!
+I will post the first contest tomorrow around noon CEST, with [**AiContest**](https://steemit.com/created/aicontest) tag. Stay tuned!
