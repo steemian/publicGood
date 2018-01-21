@@ -4,9 +4,10 @@ Submit your code, 90% payout split among winners (50/20/10/10)
 
 ![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
 
+![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](./STEEM-fr.md))*
+
 Blockchain and crypto currencies have a lot to do with [Game Theory](https://en.wikipedia.org/wiki/Game_theory). For this very first coding contest on Steem, I invite you to submit your code for a bot that will play repeatedly a very simple game: the [*Public Goods Problem*](https://en.wikipedia.org/wiki/Public_goods_game). 
 
-![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](./STEEM-fr.md))*
 
 ### Why A contest ?
 
@@ -24,7 +25,7 @@ Everybody is welcome to submit code. The more, the merrier.
 
 Very simple game indeed, and easy to play, even for AIs, and psychologically intense. Will you cooperate or live on the land? Write a clever AI to play for you!
 
-![Public goods](https://s19.postimg.org/ufr2d3bbn/public-goods-small.png)
+![Public goods](https://s19.postimg.org/jvlq7uj8j/public-goods-smaller.png)
 
 Each turn, contribute to a common fund, or not. The bank then doubles the total fund and redistributes evenly among all participants. Maybe it rings a bell for you steemians?
 
