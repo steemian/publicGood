@@ -57,7 +57,7 @@ Assignment to table is random and *not* based on performance from previous phase
 
 Once players sit on the table, everyone is asked to bet either *10 tokens*, *nothing*, or go *all in*. Then the bank will double the amount received and redistribute the total evenly among players, including those who gave nothing 
 
-Each table will play `ROUNDS_PER_PHASE` rounds with the same players, where players know the history (but not the name) of their opponents, and can take decisions accordingly. Players will be shuffled again to make new tables (with new bots), and play a new `ROUNDS_PER_PHASE`-round phase, a total of `PHASES_PER_GAME` times; playing a total of (`PHASES_PER_GAME`x`ROUNDS_PER_PHASE`) rounds. You'll have no information on what your opponents did on previous tables (only their current wealth)
+Each table will play `ROUNDS_PER_PHASE` rounds with the same players, where players know the history (but not the name) of their opponents, and can take decisions accordingly. Players will be shuffled again to make new tables (with new bots), and play a new `ROUNDS_PER_PHASE`-round phase, a total of `PHASES_PER_GAME` times; playing a total of (`PHASES_PER_GAME` x `ROUNDS_PER_PHASE`) rounds. You'll have no information on what your opponents did on previous tables (only their current wealth)
 
 At the end, players will be ranked on the performance of *their best single instance*
 
@@ -75,17 +75,15 @@ At the end, players will be ranked on the performance of *their best single inst
 
 ```
 class Player:
-    
+
     def __init__(self, name):
         self.id = ...                   # a random string
         self.wealth = Const.STARTING_WEALTH
         self.action = Bet.UNDECIDED
         self.decision = Bet.UNDECIDED
 
-
     def think(self, context):           # override this
         pass
-
 ```
 
 Your decision should return
@@ -119,21 +117,17 @@ class ExamplePlayer(Player):
             return Bet.NOTHING
         else:
             return Bet.TEN
-
 ```
 
 A fresh copy of the context object will be provided with all informations you need (updated every round):
 
 ``` 
 class PlayerContext:
-
 #   wealth = 0;             # this player current wealth, as a float
 #   previousMoves = []      # a list of the moves this player made during previous rounds
 #   id = ""                 # a random string. Yours is Player.id
 
-
 class Context:
-
 #   playerContexts = {} # a dictionary of (Player.id : playerContext). Some are bots
 #   payouts = []        # a list of the payouts for every past round of this phase
 #   roundIndex = 0      # out of Const.ROUNDS_PER_PHASE
