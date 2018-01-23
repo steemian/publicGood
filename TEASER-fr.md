@@ -1,15 +1,13 @@
-## The AI Contest - Bientôt sur Steem!
-
 Un nouveau projet débarque sur Steem! Voici un jeu pour les programmeurs comme pour les sociologues et les addicts de la blockchain. Et ça n'est pas *que* un jeu. Il y a du cash pour les gagnants et de la connaissance pour tous. Bienvenue sur **The AI Contest**
 
 
 <center>
-![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+![AiContest](https://s19.postimg.org/mz2ksxjub/Ai_Contest-steem.jpg)
 </center>
 
 Je poste un jeu, inspiré d'exemple connus de la théorie des jeu; et j'invite la communauté à envoyer des algorithmes simples qui jouent à ce jeu. L'argent gagné est redistribué parmi les vainqueurs.
 
-![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *(read the [English translation](./TEASER.md))*
+![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *(read the [English translation](https://steemit.com/aicontest/@gbd/the-ai-contest-coming-soon))*
 
 ### Pourquoi the AI Contest
 
@@ -74,14 +72,14 @@ Et c'est aussi un excellent moment pour apprendre à programmer, non?
 Vous voulez apprendre à programmer? Moi je veux apprendre le Python. C'est un bon langage: simple, facile et compact
 
 <center>
-![Python-logo](https://www.python.org/static/community_logos/python-logo-generic.svg)
+![Python-logo](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
 </center>
 
 ### Ou est-il, ce concours?
 
 Demain!
 
-Je posterai le premier concours demain, vers midi CEST avec le tag [**AiContest**](https://steemit.com/created/aicontest).
+Je posterai le premier concours demain, vers minuit CEST (6PM sur la côte est) avec le tag [**AiContest**](https://steemit.com/created/aicontest).
 
 A demain
 
