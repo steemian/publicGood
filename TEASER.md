@@ -3,12 +3,12 @@
 Here's a new project for Steem! Some fun for programmers and sociologists alike: **AI contests**. It's not *only* a game, though: there's money for the winners and knowledge for all.
 
 <center>
-![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+![AiContest](https://s19.postimg.org/mz2ksxjub/Ai_Contest-steem.jpg)
 </center>
 
 I provide a game, inspired by popular game theory case studies, and ask the Steem community to submit algorithms to play that game. Then rewards are split between the best performing AIs.
 
-![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](./TEASER-fr.md))*
+![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](https://steemit.com/aicontest/@gbd/the-ai-contest-bientot-sur-steem))*
 
 ### Alright, but why?
 
@@ -69,15 +69,15 @@ Also, this is a great way to learn programming, isn't it? It's not that hard and
 You may want to learn programming? I want to learn Python. And it's a good language for starters: quick, compact and [easy to learn](https://www.google.fr/search?q=python+quick+tutorial)
 
 <center>
-![Python-logo](https://www.python.org/static/community_logos/python-logo-generic.svg)
+![Python-logo](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
 </center>
 
 ### So where's the contest?
 
 Tomorrow!
 
-I will post the first contest tomorrow around noon CEST, with [**AiContest**](https://steemit.com/created/aicontest) tag. Stay tuned!
+I will post the first contest tomorrow around midnight CEST (6 PM in NYC, 8 AM in Seoul), with [**AiContest**](https://steemit.com/created/aicontest) tag. Stay tuned!
 
-*Do you think this contest is useful for the community? Tell me your opinion!*
+*Do you think this contest is useful for the community? Tell me your opinion, comments most welcome!*
 
 *(many thanks to the authors I link to, including anonymous Wikipedians)*
