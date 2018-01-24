@@ -1,11 +1,13 @@
-## The AI Contest #1: public goods problem
+# CONTEST IS OPEN !!
 
-Submit your code, 90% payout split among winners (50/20/10/10)
+*Submit your code, 90% payout split among winners (50/20/10/10)*
+
+## The public goods problem
+
 <center>
-![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
-</center>
-
+![AiContest](https://s19.postimg.org/mz2ksxjub/Ai_Contest-steem.jpg)
 ![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](./STEEM-fr.md))*
+</center>
 
 Blockchain and crypto currencies have a lot to do with [Game Theory](https://en.wikipedia.org/wiki/Game_theory). For this very first coding contest on Steem, I invite you to submit your code for a bot that will play repeatedly a very simple game: the [*Public Goods Problem*](https://en.wikipedia.org/wiki/Public_goods_game). 
 
@@ -21,6 +23,7 @@ Also, we may be doing our little share in advancing the fields of games theory a
 
 Everybody is welcome to submit code. The more, the merrier. Non-programmers are welcome too (see below)
 
+*And hey - there is already 4 SBD in the prize pool!*
 
 ### The Game
 
@@ -70,9 +73,9 @@ At the end, players will be ranked on the performance of *their best single inst
 
 ```
     PLAYERS_PER_TABLE = 10
-    INSTANCES_PER_PLAYER = 12
+    INSTANCES_PER_PLAYER = 15
     ROUNDS_PER_PHASE = 15
-    PHASES_PER_GAME = 10
+    PHASES_PER_GAME = 20
     STARTING_WEALTH = 100
 ```
 
@@ -184,4 +187,4 @@ Of course, nothing prevents you from submitting an AI without upvoting to increa
 
 ### Read my previous posts
 
-* *[the AI Contest Introduction post](./TEASER.md))* (or [in French](./TEASER-fr.md) ![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png))
+* *[the AI Contest Introduction post](./TEASER.md)* (or [in French](./TEASER-fr.md) ![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png))

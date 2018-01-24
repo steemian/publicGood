@@ -1,12 +1,15 @@
-## The AI Contest #1: Le dilemme des biens communs
+# CONCOURS OUVERT !!
 
-Postez votre AI, 90% des récompenses partagées entre les gagnants
+*Postez votre idée, 90% des gains redistribués (50/20/10/10)*
+
+## Le dilemme du Bien Commun
+
 
 <center>
-![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+![AiContest](https://s19.postimg.org/mz2ksxjub/Ai_Contest-steem.jpg)
+![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *([Article en anglais](./STEEM.md))*
 </center>
 
-![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *([Article en anglais](./STEEM.md))*
 
 Les cryptomonnaies sont une application de la [théorie des jeux](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux). Etudions ensemble pour mieux comprendre Steem et les steemiens
 
@@ -23,6 +26,7 @@ Et au passage, si ce concours peut aider à mieux comprendre la théorie des jeu
 
 Toute contribution est la bienvenue, même les programmeurs débutants, même les non-programmeurs (voir plus bas)
 
+*(et il y a déjà 4 SBD à distribuer)*
 
 ### Le Jeu
 
@@ -71,9 +75,9 @@ Après la dernière phase, les AIs seront classés selon les performances de leu
 
 ```
     PLAYERS_PER_TABLE = 10
-    INSTANCES_PER_PLAYER = 12
+    INSTANCES_PER_PLAYER = 15
     ROUNDS_PER_PHASE = 15
-    PHASES_PER_GAME = 10
+    PHASES_PER_GAME = 20
     STARTING_WEALTH = 100
 ```
 
