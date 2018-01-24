@@ -1,13 +1,13 @@
-## The AI Contest - Bientôt sur Steem!
-
 Un nouveau projet débarque sur Steem! Voici un jeu pour les programmeurs comme pour les sociologues et les addicts de la blockchain. Et ça n'est pas *que* un jeu. Il y a du cash pour les gagnants et de la connaissance pour tous. Bienvenue sur **The AI Contest**
 
 
-![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+<center>
+![AiContest](https://s19.postimg.org/mz2ksxjub/Ai_Contest-steem.jpg)
+</center>
 
 Je poste un jeu, inspiré d'exemple connus de la théorie des jeu; et j'invite la communauté à envoyer des algorithmes simples qui jouent à ce jeu. L'argent gagné est redistribué parmi les vainqueurs.
 
-![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *(read the [English translation](./TEASER.md))*
+![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *(read the [English translation](https://steemit.com/aicontest/@gbd/the-ai-contest-coming-soon))*
 
 ### Pourquoi the AI Contest
 
@@ -23,7 +23,9 @@ Sur Steem, la communauté dépend de deux choses
 
 Citons [Wikipedia](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux): 
 
+<center>
 ![Wikipedia](https://s19.postimg.org/58g6clfur/2018-01-21_14_55_46-_Game_theory_-_Wikipedia.png)
+</center>
 
 La **théorie des jeux** est un domaine des mathématiques. La théorie des jeux s'intéresse aux interactions des choix d'individus (appelés "joueurs") qui sont conscients de l'existence de ces interactions
 
@@ -31,7 +33,9 @@ En bref, on étudie comment les gens réagissent à telle ou telle situation où
 
 Pour en savoir plus, commencez par regarder le [dilemme du prisonnier](https://fr.wikipedia.org/wiki/Dilemme_du_prisonnier). Ou bien par la vision de [XKCD](https://xkcd.com/601/)
 
+<center>
 ![XKCD](https://imgs.xkcd.com/comics/game_theory.png)
+</center>
 
 
 ### Un concours? Comment ça marche?
@@ -51,7 +55,9 @@ Les règles sont simples:
 * Votez pour ajouter des récompenses
 * Au bout d'une semaine, j'exécute le programme, publie le résultat et distribue les récompenses
 
+<center>
 ![Choose](https://steemitimages.com/0x0/https://s-media-cache-ak0.pinimg.com/originals/49/10/a2/4910a224743397d4b416e0be175b030e.gif)
+</center>
 
 
 ### Faut-il savoir programmer?
@@ -65,14 +71,15 @@ Et c'est aussi un excellent moment pour apprendre à programmer, non?
 
 Vous voulez apprendre à programmer? Moi je veux apprendre le Python. C'est un bon langage: simple, facile et compact
 
-![Python-logo](https://www.python.org/static/community_logos/python-logo-generic.svg)
-
+<center>
+![Python-logo](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
+</center>
 
 ### Ou est-il, ce concours?
 
 Demain!
 
-Je posterai le premier concours demain, vers midi CEST avec le tag [**AiContest**](https://steemit.com/created/aicontest).
+Je posterai le premier concours demain, vers minuit CEST (6PM sur la côte est) avec le tag [**AiContest**](https://steemit.com/created/aicontest).
 
 A demain
 

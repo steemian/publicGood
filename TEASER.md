@@ -2,11 +2,13 @@
 
 Here's a new project for Steem! Some fun for programmers and sociologists alike: **AI contests**. It's not *only* a game, though: there's money for the winners and knowledge for all.
 
-![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+<center>
+![AiContest](https://s19.postimg.org/mz2ksxjub/Ai_Contest-steem.jpg)
+</center>
 
 I provide a game, inspired by popular game theory case studies, and ask the Steem community to submit algorithms to play that game. Then rewards are split between the best performing AIs.
 
-![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](./TEASER-fr.md))*
+![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](https://steemit.com/aicontest/@gbd/the-ai-contest-bientot-sur-steem))*
 
 ### Alright, but why?
 
@@ -24,15 +26,17 @@ And you will help advance cognitive sciences!
 
 Quoting [Wikipedia](https://en.wikipedia.org/wiki/Game_theory): 
 
+<center>
 ![Wikipedia](https://s19.postimg.org/58g6clfur/2018-01-21_14_55_46-_Game_theory_-_Wikipedia.png)
-
+</center>
 
 In short, it's studying how people react to situations that look like a game, when they can win or loose from the situation, depending on other people' choices. It's both mathematics, economics and psychology. You get addict. And it has lots and lots of applications in how people react to the blockchain technologies, no need to explain that to you steemains.
 
 For a starter, go for the [prisonner's dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma). And once you got the idea, listen to [XKCD](https://xkcd.com/601/)'s view on game theory
 
+<center>
 ![XKCD](https://imgs.xkcd.com/comics/game_theory.png)
-
+</center>
 
 ### I heard contest. How does it work?
 
@@ -46,8 +50,9 @@ The rules are simple:
 * after one week I will make your answers compete with one another, write a report
 * ... and redistribute prizes
 
-
+<center>
 ![Choose](https://steemitimages.com/0x0/https://s-media-cache-ak0.pinimg.com/originals/49/10/a2/4910a224743397d4b416e0be175b030e.gif)
+</center>
 
 
 ### Do I need to be a programmer
@@ -63,15 +68,16 @@ Also, this is a great way to learn programming, isn't it? It's not that hard and
 
 You may want to learn programming? I want to learn Python. And it's a good language for starters: quick, compact and [easy to learn](https://www.google.fr/search?q=python+quick+tutorial)
 
-![Python-logo](https://www.python.org/static/community_logos/python-logo-generic.svg)
-
+<center>
+![Python-logo](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
+</center>
 
 ### So where's the contest?
 
 Tomorrow!
 
-I will post the first contest tomorrow around noon CEST, with [**AiContest**](https://steemit.com/created/aicontest) tag. Stay tuned!
+I will post the first contest tomorrow around midnight CEST (6 PM in NYC, 8 AM in Seoul), with [**AiContest**](https://steemit.com/created/aicontest) tag. Stay tuned!
 
-*Do you think this contest is useful for the community? Tell me your opinion!*
+*Do you think this contest is useful for the community? Tell me your opinion, comments most welcome!*
 
 *(many thanks to the authors I link to, including anonymous Wikipedians)*

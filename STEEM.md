@@ -1,17 +1,20 @@
-## The AI Contest #1: public goods problem
+# CONTEST IS OPEN !!
 
-Submit your code, 90% payout split among winners (50/20/10/10)
+*Submit your code, 90% payout split among winners (50/20/10/10)*
 
-![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+## The public goods problem
 
-![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](./STEEM-fr.md))*
+<center>
+![AiContest](https://s19.postimg.org/mz2ksxjub/Ai_Contest-steem.jpg)
+![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](https://steemit.com/aicontest/@gbd/fr-the-ai-contest-1-le-dilemme-du-bien-commun))*
+</center>
 
 Blockchain and crypto currencies have a lot to do with [Game Theory](https://en.wikipedia.org/wiki/Game_theory). For this very first coding contest on Steem, I invite you to submit your code for a bot that will play repeatedly a very simple game: the [*Public Goods Problem*](https://en.wikipedia.org/wiki/Public_goods_game). 
 
 
 ### Why A contest ?
 
-*(read more on [AI Contest introductory post](./TEASER.md))*
+*(read more on [AI Contest introductory post](https://steemit.com/aicontest/@gbd/the-ai-contest-coming-soon))*
 
 
 The Steem network needs coders, professional and hobbyists alike. We need to develop bots, understand the blockchain, learn to program. And of course we need to have some fun. That's why I start this contest, others will follow every week.
@@ -20,12 +23,15 @@ Also, we may be doing our little share in advancing the fields of games theory a
 
 Everybody is welcome to submit code. The more, the merrier. Non-programmers are welcome too (see below)
 
+*And hey - there is already 4 SBD in the prize pool!*
 
 ### The Game
 
 Very simple game indeed, and easy to play, even for AIs, and psychologically intense. Will you cooperate or live on the land? Write a clever AI to play for you!
 
+<center>
 ![Public goods](https://s19.postimg.org/jvlq7uj8j/public-goods-smaller.png)
+</center>
 
 Each turn, contribute to a common fund (by giving away tokens), or not. The bank then doubles the total fund and redistributes evenly among all participants. Maybe it rings a bell for you steemians?
 
@@ -48,7 +54,9 @@ Post your solution anyway! There are lots of programmers around (including mysel
 
 Alternatively, this is a great time to start learning. Ask around or [look for a Python quick tutorial](https://www.google.fr/search?q=python+quick+tutorial)
 
+<center>
 ![Let's get coding](https://s19.postimg.org/tswr14oc3/code-400.jpg)
+</center>
 
 ### Let's get coding
 
@@ -65,9 +73,9 @@ At the end, players will be ranked on the performance of *their best single inst
 
 ```
     PLAYERS_PER_TABLE = 10
-    INSTANCES_PER_PLAYER = 12
+    INSTANCES_PER_PLAYER = 15
     ROUNDS_PER_PHASE = 15
-    PHASES_PER_GAME = 10
+    PHASES_PER_GAME = 20
     STARTING_WEALTH = 100
 ```
 
@@ -153,7 +161,9 @@ The arena code is publicly available on [github](https://github.com/steemian/pub
 
 ### The Strategy
 
+<center>
 ![Strategy](https://s19.postimg.org/7tqcdqzqb/rubik-500.jpg)
+</center>
 
 The payoff is maximum when all players on a table go all in, but, well, do you really expect your opponents o be that generous? Betting nothing may be a good decision in real life, but remember that the Arena only rewards the top 4. Betting ten is a shy and safe move, but won't make a fortune either. And even if you want to help others (strange idea) by going all in, you'd better choose well the time for that.
 
@@ -162,7 +172,7 @@ Build your own strategy, and be clever!
 
 ### The rewards
 
-The arena will be executed in eight days, and the results published manually shortly after. All rewards from upvotes to this post, its translations, the [introductory post](./TEASER.md) and to my comments will be split between the winners:
+The arena will be executed in eight days, and the results published manually shortly after. All rewards from upvotes to this post, its translations, the [introductory post](https://steemit.com/aicontest/@gbd/the-ai-contest-coming-soon) and to my comments will be split between the winners:
 
 * 1st player: 50% of total rewards
 * 2nd player: 20%
@@ -177,4 +187,4 @@ Of course, nothing prevents you from submitting an AI without upvoting to increa
 
 ### Read my previous posts
 
-* *[the AI Contest Introduction post](./TEASER.md))* (or [in French](./TEASER-fr.md) ![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png))
+* *[the AI Contest Introduction post](https://steemit.com/aicontest/@gbd/the-ai-contest-coming-soon)* (or [in French](https://steemit.com/aicontest/@gbd/the-ai-contest-bientot-sur-steem) ![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png))

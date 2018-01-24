@@ -1,10 +1,15 @@
-## The AI Contest #1: Le dilemme des biens communs
+# CONCOURS OUVERT !!
 
-Postez votre AI, 90% des récompenses partagées entre les gagnants
+*Postez votre idée, 90% des gains redistribués (50/20/10/10)*
 
-![AiContest](https://s19.postimg.org/c40evtcxf/code_Blur.png)
+## Le dilemme du Bien Commun
 
-![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *([Article en anglais](./STEEM.md))*
+
+<center>
+![AiContest](https://s19.postimg.org/mz2ksxjub/Ai_Contest-steem.jpg)  
+![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *([Article en anglais](https://steemit.com/aicontest/@gbd/the-ai-contest-1-public-goods-problem))*
+</center>
+
 
 Les cryptomonnaies sont une application de la [théorie des jeux](https://fr.wikipedia.org/wiki/Th%C3%A9orie_des_jeux). Etudions ensemble pour mieux comprendre Steem et les steemiens
 
@@ -13,7 +18,7 @@ POur ce premier concours, je vous invite à décrire une intelligence artificiel
 
 ### Un concours ?
 
-*(plus d'infos sur [mon introduction à The AI Contest](./TEASER-fr.md))*
+*(plus d'infos sur [mon introduction à The AI Contest](https://steemit.com/aicontest/@gbd/the-ai-contest-bientot-sur-steem))*
 
 STEEM a besoin de programmeurs, professionnels comme amateurs. Il y a toujours besoin de développer ou d'améliorer un bot, comprendre un peu mieux la blockchain ou simplement apprendre à programmer. CQFD
 
@@ -21,12 +26,15 @@ Et au passage, si ce concours peut aider à mieux comprendre la théorie des jeu
 
 Toute contribution est la bienvenue, même les programmeurs débutants, même les non-programmeurs (voir plus bas)
 
+*(et il y a déjà 4 SBD à distribuer)*
 
 ### Le Jeu
 
 C'est un jeu très basique, une simple illustration de la théorie. Facile à jouer pour une intelligence artificielle, et néanmoins intense psychologiquement. Allez-vous coopérer pour le bien commun, ou rester oisif et profiter du travail des autres? 
 
+<center>
 ![Public goods](https://s19.postimg.org/jvlq7uj8j/public-goods-smaller.png)
+</center>
 
 Chaque tour, chaque joueur peut contribuer au bien commun en donnant des jetons virtuels, ou non. La banque double ensuite le total et redistribue à tous les joueurs, y compris ceux qui n'ont rien donné. Un peu comme dans l'économie réelle, et beaucoup comme sur STEEM.
 
@@ -49,7 +57,9 @@ Postez votre solution en bon français. Il y a beaucoup de programmeurs qui se f
 
 Ou bien [apprenez à programmer](https://www.google.fr/search?q=python+quick+tutorial). C'est le moment!
 
+<center>
 ![Let's get coding](https://s19.postimg.org/tswr14oc3/code-400.jpg)
+</center>
 
 ### Au boulot !
 
@@ -65,9 +75,9 @@ Après la dernière phase, les AIs seront classés selon les performances de leu
 
 ```
     PLAYERS_PER_TABLE = 10
-    INSTANCES_PER_PLAYER = 12
+    INSTANCES_PER_PLAYER = 15
     ROUNDS_PER_PHASE = 15
-    PHASES_PER_GAME = 10
+    PHASES_PER_GAME = 20
     STARTING_WEALTH = 100
 ```
 
@@ -147,14 +157,16 @@ Le code est disponible sur [github](https://github.com/steemian/publicGood). Tou
 
 ### Stratégie
 
+<center>
 ![Strategy](https://s19.postimg.org/7tqcdqzqb/rubik-500.jpg)
+</center>
 
 Le plus gros gain possible se passe quand tout le monde joue tapis, mais est-il raisonnable d'espérer ça de vos adversaires? Jouer l'avarice marche dans la vraie vie (helas), mais n'oubliez pas que la récompense est seulement pour les quatre premiers. Donner dix est une stratégie valide, mais ça ne construit pas la fortune. Et même si vous voulez tout donner pour aider les autres (vous pouvez), encore faut-il bien choisir le moment. Soyez malins!
 
 
 ### Système de récompenses
 
-L'Arène sera exécutée dans huit jours, et les résultats publiés (manuellement). Toutes les récompenses des upvotes (sur ce post, ses traductions, le [post d'introduction](./TEASER-fr.md) et mes commentaires) seront répartis en:
+L'Arène sera exécutée dans huit jours, et les résultats publiés (manuellement). Toutes les récompenses des upvotes (sur ce post, ses traductions, le [post d'introduction](https://steemit.com/aicontest/@gbd/the-ai-contest-bientot-sur-steem) et mes commentaires) seront répartis en:
 
 * 1ere AI au classement: 50% du total
 * 2e AI: 20%
@@ -169,5 +181,4 @@ Bien sûr, personne ne vous oblige à voter si vous postez une AI. C'est en soi 
 
 ### Mes posts précédents
 
-* *[Introduction au AI Challenge](./TEASER-fr.md))* ([version anglaise](./TEASER.md) ![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *([Article en anglais](./STEEM.md))*
-)
+* *[Introduction au AI Challenge](https://steemit.com/aicontest/@gbd/the-ai-contest-bientot-sur-steem)* ([version anglaise](https://steemit.com/aicontest/@gbd/the-ai-contest-coming-soon) ![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) )
