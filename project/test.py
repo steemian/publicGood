@@ -107,7 +107,7 @@ def fullGame():
 
     for i in range(0, Const.INSTANCES_PER_PLAYER):
         players.append(BotRandom("R{}".format(i)))
-        players.append(ExamplePlayer("X{}".format(i)))
+        players.append(ExShortSighted("X{}".format(i)))
         players.append(BotHonest("H{}".format(i)))
         players.append(BotUrchin("U{}".format(i)))
         players.append(BotUrchin("U{}".format(i)))
@@ -127,7 +127,7 @@ def instantiateGame():
 
     a = Arena()
 
-
+    
     
     a.runArena()
 

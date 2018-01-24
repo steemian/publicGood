@@ -6,3 +6,4 @@
     python test.py > test.log
     pause
     goto INFINITE
+    
