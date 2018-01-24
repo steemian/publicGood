@@ -6,7 +6,7 @@
 
 <center>
 ![AiContest](https://s19.postimg.org/mz2ksxjub/Ai_Contest-steem.jpg)
-![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](./STEEM-fr.md))*
+![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png) *(read the [french translation](https://steemit.com/aicontest/@gbd/fr-the-ai-contest-1-le-dilemme-du-bien-commun))*
 </center>
 
 Blockchain and crypto currencies have a lot to do with [Game Theory](https://en.wikipedia.org/wiki/Game_theory). For this very first coding contest on Steem, I invite you to submit your code for a bot that will play repeatedly a very simple game: the [*Public Goods Problem*](https://en.wikipedia.org/wiki/Public_goods_game). 
@@ -14,7 +14,7 @@ Blockchain and crypto currencies have a lot to do with [Game Theory](https://en.
 
 ### Why A contest ?
 
-*(read more on [AI Contest introductory post](./TEASER.md))*
+*(read more on [AI Contest introductory post](https://steemit.com/aicontest/@gbd/the-ai-contest-coming-soon))*
 
 
 The Steem network needs coders, professional and hobbyists alike. We need to develop bots, understand the blockchain, learn to program. And of course we need to have some fun. That's why I start this contest, others will follow every week.
@@ -172,7 +172,7 @@ Build your own strategy, and be clever!
 
 ### The rewards
 
-The arena will be executed in eight days, and the results published manually shortly after. All rewards from upvotes to this post, its translations, the [introductory post](./TEASER.md) and to my comments will be split between the winners:
+The arena will be executed in eight days, and the results published manually shortly after. All rewards from upvotes to this post, its translations, the [introductory post](https://steemit.com/aicontest/@gbd/the-ai-contest-coming-soon) and to my comments will be split between the winners:
 
 * 1st player: 50% of total rewards
 * 2nd player: 20%
@@ -187,4 +187,4 @@ Of course, nothing prevents you from submitting an AI without upvoting to increa
 
 ### Read my previous posts
 
-* *[the AI Contest Introduction post](./TEASER.md)* (or [in French](./TEASER-fr.md) ![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png))
+* *[the AI Contest Introduction post](https://steemit.com/aicontest/@gbd/the-ai-contest-coming-soon)* (or [in French](https://steemit.com/aicontest/@gbd/the-ai-contest-bientot-sur-steem) ![French](https://s9.postimg.org/3mpd3j2sf/flag-fr-qc_14x21.png))

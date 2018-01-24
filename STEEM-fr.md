@@ -6,8 +6,8 @@
 
 
 <center>
-![AiContest](https://s19.postimg.org/mz2ksxjub/Ai_Contest-steem.jpg)
-![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *([Article en anglais](./STEEM.md))*
+![AiContest](https://s19.postimg.org/mz2ksxjub/Ai_Contest-steem.jpg)  
+![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *([Article en anglais](https://steemit.com/aicontest/@gbd/the-ai-contest-1-public-goods-problem))*
 </center>
 
 
@@ -18,7 +18,7 @@ POur ce premier concours, je vous invite à décrire une intelligence artificiel
 
 ### Un concours ?
 
-*(plus d'infos sur [mon introduction à The AI Contest](./TEASER-fr.md))*
+*(plus d'infos sur [mon introduction à The AI Contest](https://steemit.com/aicontest/@gbd/the-ai-contest-bientot-sur-steem))*
 
 STEEM a besoin de programmeurs, professionnels comme amateurs. Il y a toujours besoin de développer ou d'améliorer un bot, comprendre un peu mieux la blockchain ou simplement apprendre à programmer. CQFD
 
@@ -166,7 +166,7 @@ Le plus gros gain possible se passe quand tout le monde joue tapis, mais est-il 
 
 ### Système de récompenses
 
-L'Arène sera exécutée dans huit jours, et les résultats publiés (manuellement). Toutes les récompenses des upvotes (sur ce post, ses traductions, le [post d'introduction](./TEASER-fr.md) et mes commentaires) seront répartis en:
+L'Arène sera exécutée dans huit jours, et les résultats publiés (manuellement). Toutes les récompenses des upvotes (sur ce post, ses traductions, le [post d'introduction](https://steemit.com/aicontest/@gbd/the-ai-contest-bientot-sur-steem) et mes commentaires) seront répartis en:
 
 * 1ere AI au classement: 50% du total
 * 2e AI: 20%
@@ -181,5 +181,4 @@ Bien sûr, personne ne vous oblige à voter si vous postez une AI. C'est en soi 
 
 ### Mes posts précédents
 
-* *[Introduction au AI Challenge](./TEASER-fr.md))* ([version anglaise](./TEASER.md) ![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) *([Article en anglais](./STEEM.md))*
-)
+* *[Introduction au AI Challenge](https://steemit.com/aicontest/@gbd/the-ai-contest-bientot-sur-steem)* ([version anglaise](https://steemit.com/aicontest/@gbd/the-ai-contest-coming-soon) ![English](https://s19.postimg.org/ezi3gi6c3/UK-_US_flag-21.png) )
