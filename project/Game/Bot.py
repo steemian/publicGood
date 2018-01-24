@@ -18,7 +18,6 @@ class Bot(Player):
         raise NotImplementedError("Bot is abstract")
 
 
-
 class BotUrchin(Bot):
     def think(self, context):
         return Bet.NOTHING
