@@ -5,13 +5,17 @@ from Contrib.T4TPlayer import T4TPlayer
 from Contrib.OffendablePlayer import OffendablePlayer
 from Contrib.SelfishPlayer import SelfishPlayer
 
+
+# OWN
+from Contrib.RiskyPlayer import RiskyPlayer
+from Contrib.ShortSightedPlayer import ShortSightedPlayer
+from Contrib.SocialPlayer import SocialPlayer
+
+
 #from Contrib. import 
 #from Contrib. import 
 #from Contrib. import 
 #from Contrib. import 
 #from Contrib. import 
-#from Contrib. import from Contrib.ExShortSighted import ExShortSighted
-from Contrib.ExampleRisker import ExampleRisker
-from Contrib.ExConservative import ExConservative
-from Contrib.ExGiver import ExGiver
-from Contrib.ExSocial import ExSocial
+#from Contrib. import 
+
