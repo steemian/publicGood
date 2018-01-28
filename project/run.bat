@@ -1,8 +1,7 @@
 @echo off
 
 
-:INFINITE
-    cls
-    python __main__.py
-    pause
-    goto INFINITE
+cls
+echo RUNNING GAME, please wait ...
+python run.py > run.log
+pause    
