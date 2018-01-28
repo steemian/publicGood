@@ -1,3 +1,6 @@
+from __future__ import print_function
+import sys
+
 from random import shuffle 
 from math import ceil, floor
 
@@ -7,6 +10,8 @@ from Game.Const import Const
 from Game.Context import Context, PlayerContext
 from Game.Arena import Arena
 
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
 
 
 class League:
@@ -100,10 +105,12 @@ class League:
             else:
                 ais[name] = p
 
+        eprint ("\n---------------------")
         sorted(ais, key=lambda key:ais[key].wealth)
         index = 1
         for k,v in ais.items():
             print ("{:3} - {:6.2f}   {:40}  from  {}".format(index, v.wealth, v.name, v.getSteemUser()))
+            eprint ("{:3} - {:6.2f}   {:40}  from  {}".format(index, v.wealth, v.name, v.getSteemUser()))
             index += 1
 
 

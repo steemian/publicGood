@@ -23,13 +23,14 @@ class SocialPlayer(Player):
 
 
     def friendlyMove(self, context, friends, roundIndex):
+
         if (len(friends) > 4):  # Nearly impossible, but worth trying
-            print ("Social {} found optimal !!!".format(self.id))
+            eprint ("Social {} found optimal !!!".format(self.id))
             return Bet.ALLIN
 
         if (len(friends) > 2):
             if (self.id == self.bestInLine(friends)):
-                print ("Social {} feels best in line of {}".format(self.id, len(friends)))
+                eprint ("Social {} feels best in line of {}".format(self.id, len(friends)))
                 return Bet.NOTHING
             else: 
                 return Bet.ALLIN
@@ -44,8 +45,6 @@ class SocialPlayer(Player):
         if (playerContext.previousMoves[0:len(self.signature)] != self.signature):
             return False
         return True
-
-
 
 
     def bestInLine(self, players):

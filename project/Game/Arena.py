@@ -1,7 +1,5 @@
 from Contrib import *
-
 from Game.Bot import *
-
 
 import Game.League, Game.Const
 import Game.Bet
