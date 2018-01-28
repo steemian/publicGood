@@ -18,6 +18,7 @@ class Arena:
         SelfishPlayer,
         T4TPlayer,
         ShamelessCopierPlayer,
+        ReboundPlayer,
 
     ]
 
