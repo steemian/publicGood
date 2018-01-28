@@ -1,9 +1,9 @@
-from Contrib.ExamplePlayer import ExamplePlayer
 from Contrib.ConservativePlayer import ConservativePlayer
+from Contrib.ExamplePlayer import ExamplePlayer
 from Contrib.GrimTriggerPlayer import GrimTriggerPlayer
-from Contrib.T4TPlayer import T4TPlayer
 from Contrib.OffendablePlayer import OffendablePlayer
 from Contrib.SelfishPlayer import SelfishPlayer
+from Contrib.T4TPlayer import T4TPlayer
 
 
 # OWN

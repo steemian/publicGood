@@ -18,6 +18,11 @@ class Arena:
         SelfishPlayer,
         T4TPlayer,
 
+        # OWN
+        RiskyPlayer,
+        ShortSightedPlayer,
+        SocialPlayer,
+
     ]
 
     availableBots = [
