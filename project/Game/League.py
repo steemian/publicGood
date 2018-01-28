@@ -103,7 +103,7 @@ class League:
         sorted(ais, key=lambda key:ais[key].wealth)
         index = 1
         for k,v in ais.items():
-            print ("{:3} - {:6.2f}   {}".format(index, v.wealth, v.name))
+            print ("{:3} - {:6.2f}   {:40}  from  {}".format(index, v.wealth, v.name, v.getSteemUser()))
             index += 1
 
 
