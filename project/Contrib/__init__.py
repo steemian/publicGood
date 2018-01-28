@@ -4,6 +4,7 @@ from Contrib.GrimTriggerPlayer import GrimTriggerPlayer
 from Contrib.T4TPlayer import T4TPlayer
 from Contrib.OffendablePlayer import OffendablePlayer
 from Contrib.SelfishPlayer import SelfishPlayer
+from Contrib.ShamelessCopierPlayer import ShamelessCopierPlayer
 
 #from Contrib. import 
 #from Contrib. import 
