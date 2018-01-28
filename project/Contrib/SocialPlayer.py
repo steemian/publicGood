@@ -1,7 +1,14 @@
+from __future__ import print_function
+import sys
+
+
 from Game.Player import Player
 from Game.Context import Context
 from Game.Bet import Bet
 from Game.Const import Const
+
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
 
 class SocialPlayer(Player):
 
@@ -25,12 +32,12 @@ class SocialPlayer(Player):
     def friendlyMove(self, context, friends, roundIndex):
 
         if (len(friends) > 4):  # Nearly impossible, but worth trying
-            eprint ("Social {} found optimal !!!".format(self.id))
+            #eprint ("Social {} found optimal !!!".format(self.id))
             return Bet.ALLIN
 
         if (len(friends) > 2):
             if (self.id == self.bestInLine(friends)):
-                eprint ("Social {} feels best in line of {}".format(self.id, len(friends)))
+                #eprint ("Social {} feels best in line of {}".format(self.id, len(friends)))
                 return Bet.NOTHING
             else: 
                 return Bet.ALLIN

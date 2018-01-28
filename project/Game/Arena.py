@@ -20,6 +20,7 @@ class Arena:
         RiskyPlayer,
         ShortSightedPlayer,
         SocialPlayer,
+        AveragePlayer
 
     ]
 
@@ -28,9 +29,9 @@ class Arena:
     ]
 
 
-
     def __init__(self):
         self.players  = []
+        playersDic = {}
         for i in range(0, Game.Const.INSTANCES_PER_PLAYER):
             for p in self.availablePlayers:
                 self.players.append(p(""))

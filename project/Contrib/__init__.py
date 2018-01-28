@@ -10,9 +10,7 @@ from Contrib.T4TPlayer import T4TPlayer
 from Contrib.RiskyPlayer import RiskyPlayer
 from Contrib.ShortSightedPlayer import ShortSightedPlayer
 from Contrib.SocialPlayer import SocialPlayer
-
-
-#from Contrib. import 
+from Contrib.AveragePlayer import AveragePlayer
 #from Contrib. import 
 #from Contrib. import 
 #from Contrib. import 

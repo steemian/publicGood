@@ -18,6 +18,10 @@ class PlayerContext:
         self.id = player.id
         self.previousMoves = []
 
+        # For debug only
+        self.name = player.name
+        self.ai = type(player).__name__
+
 
 class Context:
 
@@ -64,8 +68,11 @@ class Context:
                 self.totalBots)
 
         for p in self.playerContexts.values():
-            description += "     {:6}  {:<4.2f} \t-  [{}];\n".format(
+
+            # for debug only. For prod use the version without player ai
+            description += "     {:6} {:20}  {:<4.2f} \t-  [{}];\n".format(
                 p.id,
+                p.ai,
                 p.wealth,
                 " ".join(m.asChar() for m in p.previousMoves)
                 )
