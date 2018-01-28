@@ -12,6 +12,7 @@ class Bot(Player):
 
     def __init__(self, name):
         super(Bot, self).__init__(name)
+        # TODO: set non-100 initial wealth to prevent bot identification
 
 
     def think(self, context):
