@@ -15,6 +15,7 @@ class Arena:
         OffendablePlayer,
         SelfishPlayer,
         T4TPlayer,
+        ShamelessCopierPlayer,
 
         # OWN
         RiskyPlayer,
