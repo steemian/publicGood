@@ -1,7 +1,3 @@
-from __future__ import print_function
-import sys
-
-
 from Game.Player import Player
 from Game.Context import Context
 from Game.Bet import Bet
@@ -13,7 +9,7 @@ def eprint(*args, **kwargs):
 class SocialPlayer(Player):
 
     '''
-        https://gist.github.com/anonymous/c575d9023d56cd1d45abe7eacf2421d7
+        https://gist.github.com/anonymous/2629bf9599fcc41a6dbf26111e8f9818
     '''
 
     def getSteemUser(self):
@@ -32,12 +28,10 @@ class SocialPlayer(Player):
     def friendlyMove(self, context, friends, roundIndex):
 
         if (len(friends) > 4):  # Nearly impossible, but worth trying
-            #eprint ("Social {} found optimal !!!".format(self.id))
             return Bet.ALLIN
 
         if (len(friends) > 2):
             if (self.id == self.bestInLine(friends)):
-                #eprint ("Social {} feels best in line of {}".format(self.id, len(friends)))
                 return Bet.NOTHING
             else: 
                 return Bet.ALLIN
