@@ -8,9 +8,9 @@ from Contrib.RiskyPlayer import RiskyPlayer
 from Contrib.SelfishPlayer import SelfishPlayer
 from Contrib.ShamelessCopierPlayer import ShamelessCopierPlayer
 from Contrib.ShortSightedPlayer import ShortSightedPlayer
+from Contrib.SocialPlayer import SocialPlayer
 
 
-#from Contrib. import 
 #from Contrib. import 
 #from Contrib. import 
 #from Contrib. import 
