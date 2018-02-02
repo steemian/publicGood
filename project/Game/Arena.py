@@ -19,6 +19,7 @@ class Arena:
         T4TPlayer,
         ShamelessCopierPlayer,
         ReboundPlayer,
+        SocialPlayer,
 
     ]
 
