@@ -15,11 +15,13 @@ class Arena:
         ExamplePlayer,
         GrimTriggerPlayer,
         OffendablePlayer,
-        SelfishPlayer,
-        T4TPlayer,
-        ShamelessCopierPlayer,
         ReboundPlayer,
+        RiskyPlayer,
+        SelfishPlayer,
+        ShamelessCopierPlayer,
+        ShortSightedPlayer,
         SocialPlayer,
+        T4TPlayer,
 
     ]
 
